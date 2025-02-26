@@ -1,0 +1,459 @@
+<html>
+<head>
+<title>TestNG:  Test1</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test1</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>52/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Nov 07 14:34:57 IST 2023</td>
+</tr>
+<tr><td>Total time:</td><td>908 seconds (908021 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Partnerspace.T69_bookmark_file_rightclick_delete.s1_bookmark_file_delete()'><b>s1_bookmark_file_delete</b><br>Test class: Partnerspace.T69_bookmark_file_rightclick_delete</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: delete_save_btn&apos; (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at DMS_page.utility.clickWithWait(utility.java:17)
+	at Partnerspace.T69_bookmark_file_rightclick_delete.s1_bookmark_file_delete(T69_bookmark_file_rightclick_delete.java:59)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#delete_save_btn&quot;}
+  (Session info: chrome=113.0.5672.126)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-84-generic&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e7a840e8060c57dd102befa16dd1748a, findElement {using=id, value=delete_save_btn}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.126, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: /tmp/.com.google.Chrome.EXpVta}, goog:chromeOptions: {debuggerAddress: localhost:44065}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44065/devtoo..., se:cdpVersion: 113.0.5672.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e7a840e8060c57dd102befa16dd1748a
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 30 more
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace424954934", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace424954934'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: delete_save_btn&apos; (tried for 30 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at DMS_page.utility.clickWithWait(utility.java:17)
+	at Partnerspace.T69_bookmark_file_rightclick_delete.s1_bookmark_file_delete(T69_bookmark_file_rightclick_delete.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#delete_save_btn&quot;}
+  (Session info: chrome=113.0.5672.126)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-84-generic&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e7a840e8060c57dd102befa16dd1748a, findElement {using=id, value=delete_save_btn}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.126, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: /tmp/.com.google.Chrome.EXpVta}, goog:chromeOptions: {debuggerAddress: localhost:44065}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44065/devtoo..., se:cdpVersion: 113.0.5672.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e7a840e8060c57dd102befa16dd1748a
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+	... 30 more
+</pre></div></td>
+<td>68</td>
+<td>Partnerspace.T69_bookmark_file_rightclick_delete@661c46bc</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Partnerspace.T26_file_rightclick_rename.s1_rename_onfile()'><b>s1_rename_onfile</b><br>Test class: Partnerspace.T26_file_rightclick_rename</td>
+<td></td>
+<td>20</td>
+<td>Partnerspace.T26_file_rightclick_rename@6145b81e</td></tr>
+<tr>
+<td title='Partnerspace.T40_sharelist_quickfilter.s1_sharelist_quickfilter()'><b>s1_sharelist_quickfilter</b><br>Test class: Partnerspace.T40_sharelist_quickfilter</td>
+<td></td>
+<td>15</td>
+<td>Partnerspace.T40_sharelist_quickfilter@3b46dd8</td></tr>
+<tr>
+<td title='Partnerspace.T17_file_rightclick_preview.s1_preview_onfile()'><b>s1_preview_onfile</b><br>Test class: Partnerspace.T17_file_rightclick_preview</td>
+<td></td>
+<td>15</td>
+<td>Partnerspace.T17_file_rightclick_preview@2875b016</td></tr>
+<tr>
+<td title='Partnerspace.T9_folder_rightclick_createfolder.s1_createfolder_onfolderdropdown()'><b>s1_createfolder_onfolderdropdown</b><br>Test class: Partnerspace.T9_folder_rightclick_createfolder</td>
+<td></td>
+<td>11</td>
+<td>Partnerspace.T9_folder_rightclick_createfolder@1706a5c9</td></tr>
+<tr>
+<td title='Partnerspace.T72_members_group_delete.s1_members_group_searchanddelete()'><b>s1_members_group_searchanddelete</b><br>Test class: Partnerspace.T72_members_group_delete</td>
+<td></td>
+<td>14</td>
+<td>Partnerspace.T72_members_group_delete@2b98b3bb</td></tr>
+<tr>
+<td title='Partnerspace.T2_create_project.s1_createproject()'><b>s1_createproject</b><br>Test class: Partnerspace.T2_create_project</td>
+<td></td>
+<td>15</td>
+<td>Partnerspace.T2_create_project@4d96250</td></tr>
+<tr>
+<td title='Partnerspace.T47_bookmark_folder_rightclick_delete.s1_deletefolder_onbookmark()'><b>s1_deletefolder_onbookmark</b><br>Test class: Partnerspace.T47_bookmark_folder_rightclick_delete</td>
+<td></td>
+<td>10</td>
+<td>Partnerspace.T47_bookmark_folder_rightclick_delete@6da9dc6</td></tr>
+<tr>
+<td title='Partnerspace.T5_uploadfile_using_uploadbutton_ontoprightcorner.s1_uploadfile_onuploadbutton()'><b>s1_uploadfile_onuploadbutton</b><br>Test class: Partnerspace.T5_uploadfile_using_uploadbutton_ontoprightcorner</td>
+<td></td>
+<td>10</td>
+<td>Partnerspace.T5_uploadfile_using_uploadbutton_ontoprightcorner@7a93b263</td></tr>
+<tr>
+<td title='Partnerspace.T43_bookmark_folder_rightclick_createfolder.s1_bookmark_createfolder()'><b>s1_bookmark_createfolder</b><br>Test class: Partnerspace.T43_bookmark_folder_rightclick_createfolder</td>
+<td></td>
+<td>10</td>
+<td>Partnerspace.T43_bookmark_folder_rightclick_createfolder@134c370e</td></tr>
+<tr>
+<td title='Partnerspace.T30_file_rightclick_lock.s1_checklock_unlock_onfile()'><b>s1_checklock_unlock_onfile</b><br>Test class: Partnerspace.T30_file_rightclick_lock</td>
+<td></td>
+<td>18</td>
+<td>Partnerspace.T30_file_rightclick_lock@7f92b990</td></tr>
+<tr>
+<td title='Partnerspace.T44_bookmark_folder_rightclick_download.s1_bookmark_download()'><b>s1_bookmark_download</b><br>Test class: Partnerspace.T44_bookmark_folder_rightclick_download</td>
+<td></td>
+<td>10</td>
+<td>Partnerspace.T44_bookmark_folder_rightclick_download@33364212</td></tr>
+<tr>
+<td title='Partnerspace.T3_projectname_search.s1_check_projectsearch()'><b>s1_check_projectsearch</b><br>Test class: Partnerspace.T3_projectname_search</td>
+<td></td>
+<td>10</td>
+<td>Partnerspace.T3_projectname_search@9a6fbc0</td></tr>
+<tr>
+<td title='Partnerspace.T56_bookmark_file_rightclick_details.s1_bookmark_file_details()'><b>s1_bookmark_file_details</b><br>Test class: Partnerspace.T56_bookmark_file_rightclick_details</td>
+<td></td>
+<td>9</td>
+<td>Partnerspace.T56_bookmark_file_rightclick_details@455824ad</td></tr>
+<tr>
+<td title='Partnerspace.T37_sharelist_folder_rightclick_linkdetails.s1_sharelist_linkdetails_onfolder()'><b>s1_sharelist_linkdetails_onfolder</b><br>Test class: Partnerspace.T37_sharelist_folder_rightclick_linkdetails</td>
+<td></td>
+<td>10</td>
+<td>Partnerspace.T37_sharelist_folder_rightclick_linkdetails@6e8a9c30</td></tr>
+<tr>
+<td title='Partnerspace.T64_bookmark_file_rightclick_rename.s1_bookmark_file_rename()'><b>s1_bookmark_file_rename</b><br>Test class: Partnerspace.T64_bookmark_file_rightclick_rename</td>
+<td></td>
+<td>8</td>
+<td>Partnerspace.T64_bookmark_file_rightclick_rename@70f31322</td></tr>
+<tr>
+<td title='Partnerspace.T51_recyclepin_folder_rightclick_delete.s1_recyclepin_delete()'><b>s1_recyclepin_delete</b><br>Test class: Partnerspace.T51_recyclepin_folder_rightclick_delete</td>
+<td></td>
+<td>10</td>
+<td>Partnerspace.T51_recyclepin_folder_rightclick_delete@7c84195</td></tr>
+<tr>
+<td title='Partnerspace.T67_bookmark_file_rightclick_checkout.s1_bookmark_file_checkoutandundocheckout()'><b>s1_bookmark_file_checkoutandundocheckout</b><br>Test class: Partnerspace.T67_bookmark_file_rightclick_checkout</td>
+<td></td>
+<td>17</td>
+<td>Partnerspace.T67_bookmark_file_rightclick_checkout@e1e2e5e</td></tr>
+<tr>
+<td title='Partnerspace.T29_file_rightclick_checkout.s1_checkout_onfile()'><b>s1_checkout_onfile</b><br>Test class: Partnerspace.T29_file_rightclick_checkout</td>
+<td></td>
+<td>19</td>
+<td>Partnerspace.T29_file_rightclick_checkout@33db72bd</td></tr>
+<tr>
+<td title='Partnerspace.T52_member_Adduser.s1_Adduser_inmember()'><b>s1_Adduser_inmember</b><br>Test class: Partnerspace.T52_member_Adduser</td>
+<td></td>
+<td>15</td>
+<td>Partnerspace.T52_member_Adduser@552ed807</td></tr>
+<tr>
+<td title='Partnerspace.T54_member_addpartner.s1_addpartner_member()'><b>s1_addpartner_member</b><br>Test class: Partnerspace.T54_member_addpartner</td>
+<td></td>
+<td>13</td>
+<td>Partnerspace.T54_member_addpartner@23940f86</td></tr>
+<tr>
+<td title='Partnerspace.T16_folder_rightclick_folderactivitylog_clickclear_verify_checkbox_isenable.s1_activitylog_clickclear_verify_checkbox_isenable()'><b>s1_activitylog_clickclear_verify_checkbox_isenable</b><br>Test class: Partnerspace.T16_folder_rightclick_folderactivitylog_clickclear_verify_checkbox_isenable</td>
+<td></td>
+<td>11</td>
+<td>Partnerspace.T16_folder_rightclick_folderactivitylog_clickclear_verify_checkbox_isenable@681e144</td></tr>
+<tr>
+<td title='Partnerspace.T27_file_rightclick_move.s1_move_onfile()'><b>s1_move_onfile</b><br>Test class: Partnerspace.T27_file_rightclick_move</td>
+<td></td>
+<td>21</td>
+<td>Partnerspace.T27_file_rightclick_move@64355120</td></tr>
+<tr>
+<td title='Partnerspace.T45_bookmark_folder_rightclick_rename.s1_rename_onbookmark()'><b>s1_rename_onbookmark</b><br>Test class: Partnerspace.T45_bookmark_folder_rightclick_rename</td>
+<td></td>
+<td>11</td>
+<td>Partnerspace.T45_bookmark_folder_rightclick_rename@2216effc</td></tr>
+<tr>
+<td title='Partnerspace.T13_folder_rightclick_delete.s1_deletefolder_onfolderdropdown()'><b>s1_deletefolder_onfolderdropdown</b><br>Test class: Partnerspace.T13_folder_rightclick_delete</td>
+<td></td>
+<td>20</td>
+<td>Partnerspace.T13_folder_rightclick_delete@1a480135</td></tr>
+<tr>
+<td title='Partnerspace.T18_file_rightclick_details.s1_details_onfile()'><b>s1_details_onfile</b><br>Test class: Partnerspace.T18_file_rightclick_details</td>
+<td></td>
+<td>13</td>
+<td>Partnerspace.T18_file_rightclick_details@72ee5d84</td></tr>
+<tr>
+<td title='Partnerspace.T31_file_rightclick_delete.s1_delete_onfile()'><b>s1_delete_onfile</b><br>Test class: Partnerspace.T31_file_rightclick_delete</td>
+<td></td>
+<td>22</td>
+<td>Partnerspace.T31_file_rightclick_delete@31e04b13</td></tr>
+<tr>
+<td title='Partnerspace.T50_recyclepin_folder_rightclick_restore.s1_recyclepin_restore()'><b>s1_recyclepin_restore</b><br>Test class: Partnerspace.T50_recyclepin_folder_rightclick_restore</td>
+<td></td>
+<td>13</td>
+<td>Partnerspace.T50_recyclepin_folder_rightclick_restore@12010fd1</td></tr>
+<tr>
+<td title='Partnerspace.T42_bookmark_folder_rightclick_uploadfile.s1_bookmark_uploadfile()'><b>s1_bookmark_uploadfile</b><br>Test class: Partnerspace.T42_bookmark_folder_rightclick_uploadfile</td>
+<td></td>
+<td>11</td>
+<td>Partnerspace.T42_bookmark_folder_rightclick_uploadfile@6be7bf6d</td></tr>
+<tr>
+<td title='Partnerspace.T12_folder_rightclick_move.s1_move_onfolderdropdown()'><b>s1_move_onfolderdropdown</b><br>Test class: Partnerspace.T12_folder_rightclick_move</td>
+<td></td>
+<td>21</td>
+<td>Partnerspace.T12_folder_rightclick_move@38c2c309</td></tr>
+<tr>
+<td title='Partnerspace.T8_folder_rightclick_uploadfile.s1_uploadfile_onfolderdropdown()'><b>s1_uploadfile_onfolderdropdown</b><br>Test class: Partnerspace.T8_folder_rightclick_uploadfile</td>
+<td></td>
+<td>10</td>
+<td>Partnerspace.T8_folder_rightclick_uploadfile@14dc3f89</td></tr>
+<tr>
+<td title='Partnerspace.T11_folder_rightclick_rename.s1_rename_onfolderdropdown()'><b>s1_rename_onfolderdropdown</b><br>Test class: Partnerspace.T11_folder_rightclick_rename</td>
+<td></td>
+<td>16</td>
+<td>Partnerspace.T11_folder_rightclick_rename@4d178d55</td></tr>
+<tr>
+<td title='Partnerspace.T66_bookmark_file_rightclick_copy.s1_bookmark_file_copy()'><b>s1_bookmark_file_copy</b><br>Test class: Partnerspace.T66_bookmark_file_rightclick_copy</td>
+<td></td>
+<td>11</td>
+<td>Partnerspace.T66_bookmark_file_rightclick_copy@3be4fcc0</td></tr>
+<tr>
+<td title='Partnerspace.T10_folder_rightclick_download.s1_download_onfolderdropdown()'><b>s1_download_onfolderdropdown</b><br>Test class: Partnerspace.T10_folder_rightclick_download</td>
+<td></td>
+<td>9</td>
+<td>Partnerspace.T10_folder_rightclick_download@64412d34</td></tr>
+<tr>
+<td title='Partnerspace.T55_bookmark_file_rightclick_preview.s1_bookmark_file_preview()'><b>s1_bookmark_file_preview</b><br>Test class: Partnerspace.T55_bookmark_file_rightclick_preview</td>
+<td></td>
+<td>11</td>
+<td>Partnerspace.T55_bookmark_file_rightclick_preview@66153688</td></tr>
+<tr>
+<td title='Partnerspace.T32_file_rightclick_fileactivitylog_verifiedcheckbox_isenable.s1_fileactivitylog_verifiedcheckbox_isenable()'><b>s1_fileactivitylog_verifiedcheckbox_isenable</b><br>Test class: Partnerspace.T32_file_rightclick_fileactivitylog_verifiedcheckbox_isenable</td>
+<td></td>
+<td>14</td>
+<td>Partnerspace.T32_file_rightclick_fileactivitylog_verifiedcheckbox_isenable@6c1832aa</td></tr>
+<tr>
+<td title='Partnerspace.T57_bookmark_file_rightclick_download.s1_bookmark_file_download()'><b>s1_bookmark_file_download</b><br>Test class: Partnerspace.T57_bookmark_file_rightclick_download</td>
+<td></td>
+<td>9</td>
+<td>Partnerspace.T57_bookmark_file_rightclick_download@7318daf8</td></tr>
+<tr>
+<td title='Partnerspace.T28_file_rightclick_copy.s1_copy_onfile()'><b>s1_copy_onfile</b><br>Test class: Partnerspace.T28_file_rightclick_copy</td>
+<td></td>
+<td>15</td>
+<td>Partnerspace.T28_file_rightclick_copy@64b7225f</td></tr>
+<tr>
+<td title='Partnerspace.T33_file_rightclick_fileactivitylog_clear_verifitycheckbox_isenable.s1_fileactivitylog_clear_verifitycheckbox_isenable()'><b>s1_fileactivitylog_clear_verifitycheckbox_isenable</b><br>Test class: Partnerspace.T33_file_rightclick_fileactivitylog_clear_verifitycheckbox_isenable</td>
+<td></td>
+<td>17</td>
+<td>Partnerspace.T33_file_rightclick_fileactivitylog_clear_verifitycheckbox_isenable@4beeb0e</td></tr>
+<tr>
+<td title='Partnerspace.T49_create_sdnote.s1_create_sdnote()'><b>s1_create_sdnote</b><br>Test class: Partnerspace.T49_create_sdnote</td>
+<td></td>
+<td>10</td>
+<td>Partnerspace.T49_create_sdnote@7fd69dd</td></tr>
+<tr>
+<td title='Partnerspace.T39_sharelist_folder_rightclick_gotolocation.s1_sharelist_gotolocation()'><b>s1_sharelist_gotolocation</b><br>Test class: Partnerspace.T39_sharelist_folder_rightclick_gotolocation</td>
+<td></td>
+<td>9</td>
+<td>Partnerspace.T39_sharelist_folder_rightclick_gotolocation@70211e49</td></tr>
+<tr>
+<td title='Partnerspace.T65_bookmark_file_rightclick_move.s1_bookmark_file_move()'><b>s1_bookmark_file_move</b><br>Test class: Partnerspace.T65_bookmark_file_rightclick_move</td>
+<td></td>
+<td>11</td>
+<td>Partnerspace.T65_bookmark_file_rightclick_move@3f1ddac2</td></tr>
+<tr>
+<td title='Partnerspace.T38_sharelist_folder_rightclick_unshare.s1_sharelist_unshare()'><b>s1_sharelist_unshare</b><br>Test class: Partnerspace.T38_sharelist_folder_rightclick_unshare</td>
+<td></td>
+<td>9</td>
+<td>Partnerspace.T38_sharelist_folder_rightclick_unshare@5d01ea21</td></tr>
+<tr>
+<td title='Partnerspace.T15_folder_rightclick_folderactivitylog_verify_textbox_isenable.s1_folderactivitylog_verify_textbox_isenable()'><b>s1_folderactivitylog_verify_textbox_isenable</b><br>Test class: Partnerspace.T15_folder_rightclick_folderactivitylog_verify_textbox_isenable</td>
+<td></td>
+<td>12</td>
+<td>Partnerspace.T15_folder_rightclick_folderactivitylog_verify_textbox_isenable@778db7c5</td></tr>
+<tr>
+<td title='Partnerspace.T53_member_Addgroup.s1_Addgroup_inmember()'><b>s1_Addgroup_inmember</b><br>Test class: Partnerspace.T53_member_Addgroup</td>
+<td></td>
+<td>16</td>
+<td>Partnerspace.T53_member_Addgroup@3971f0fe</td></tr>
+<tr>
+<td title='Partnerspace.T4_createfolder_using_createbutton_ontoprightcorner.s1_createfolder()'><b>s1_createfolder</b><br>Test class: Partnerspace.T4_createfolder_using_createbutton_ontoprightcorner</td>
+<td></td>
+<td>11</td>
+<td>Partnerspace.T4_createfolder_using_createbutton_ontoprightcorner@c1fa7d4</td></tr>
+<tr>
+<td title='Partnerspace.T19_file_rightclick_download.s1_download_onfile()'><b>s1_download_onfile</b><br>Test class: Partnerspace.T19_file_rightclick_download</td>
+<td></td>
+<td>11</td>
+<td>Partnerspace.T19_file_rightclick_download@68c7ef83</td></tr>
+<tr>
+<td title='Partnerspace.T46_bookmark_folder_rightclick_move.s1_movefolder_onbookmark()'><b>s1_movefolder_onbookmark</b><br>Test class: Partnerspace.T46_bookmark_folder_rightclick_move</td>
+<td></td>
+<td>9</td>
+<td>Partnerspace.T46_bookmark_folder_rightclick_move@745c2004</td></tr>
+<tr>
+<td title='Partnerspace.T7_folder_rightclick_properties.s1_properties_onfolder()'><b>s1_properties_onfolder</b><br>Test class: Partnerspace.T7_folder_rightclick_properties</td>
+<td></td>
+<td>12</td>
+<td>Partnerspace.T7_folder_rightclick_properties@bd1111a</td></tr>
+<tr>
+<td title='Partnerspace.T41_sharelist_sortby.s1_sharelist_sortby()'><b>s1_sharelist_sortby</b><br>Test class: Partnerspace.T41_sharelist_sortby</td>
+<td></td>
+<td>17</td>
+<td>Partnerspace.T41_sharelist_sortby@39651a82</td></tr>
+<tr>
+<td title='Partnerspace.T6_upload_filewithmetadata_using_uploadbutton_ontoprightcorner.s1_uploadfile_onfilewithmetadata()'><b>s1_uploadfile_onfilewithmetadata</b><br>Test class: Partnerspace.T6_upload_filewithmetadata_using_uploadbutton_ontoprightcorner</td>
+<td></td>
+<td>10</td>
+<td>Partnerspace.T6_upload_filewithmetadata_using_uploadbutton_ontoprightcorner@35178483</td></tr>
+<tr>
+<td title='Partnerspace.T1_container_open.s1_partnerspace_verify_isopen()'><b>s1_partnerspace_verify_isopen</b><br>Test class: Partnerspace.T1_container_open</td>
+<td></td>
+<td>6</td>
+<td>Partnerspace.T1_container_open@506dcf55</td></tr>
+<tr>
+<td title='Partnerspace.T71_members_user_delete.s1_members_searchanddelete()'><b>s1_members_searchanddelete</b><br>Test class: Partnerspace.T71_members_user_delete</td>
+<td></td>
+<td>13</td>
+<td>Partnerspace.T71_members_user_delete@37864b77</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <classes>
+      <class name="Partnerspace.T69_bookmark_file_rightclick_delete">
+        <methods>
+          <include name="s1_bookmark_file_delete"/>
+          <include name="launchbrowser"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Partnerspace.T69_bookmark_file_rightclick_delete -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [suite] -->
