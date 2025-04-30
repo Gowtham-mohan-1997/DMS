@@ -52,19 +52,23 @@ public class T62_bookmark_file_rightclick_sendto_sendtosharespace extends common
 		Projectspace_pages.bookmark.click();
 		Thread.sleep(1000);
 		Actions action = new Actions(driver);
-		action.contextClick(Projectspace_pages.bookmarkfileclick1).perform();
+		action.contextClick(Projectspace_pages.filepdf).perform();
+		Thread.sleep(1000);
 
 		utility.clickWithWait(Projectspace_pages.bookmarkfilesendto);
+		Thread.sleep(1000);
 
 		utility.clickWithWait(Projectspace_pages.bookmarkfilesendtosharespace);
+		Thread.sleep(1000);
 
 		utility.clickWithWait(Projectspace_pages.bookmarkfilesharespacefolderclick);
+		Thread.sleep(1000);
 
 		utility.clickWithWait(Projectspace_pages.bookmarkfilesendbutton);
 
 		Thread.sleep(3000);
 		String actualdata = Projectspace_pages.actualelement.getText();
-		String expecteddata = "File sharedTo :Partner Space successfully.";
+		String expecteddata = "file sharedto :share space successfully.";
 		System.out.println(actualdata);
 		Assert.assertEquals(actualdata.toLowerCase(), expecteddata.toLowerCase());
 

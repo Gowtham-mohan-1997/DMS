@@ -28,14 +28,18 @@ public class T2_create_folder_using_createbutton_toprightcorner extends common_f
 			try {
 
 				sharespace_pages.document.click();
+				Thread.sleep(1000);
 
 				sharespace_pages.Sharespace.click();
 				Thread.sleep(1000);
 				sharespace_pages.create.click();
+				Thread.sleep(1000);
 
 				sharespace_pages.folder.click();
+				Thread.sleep(1000);
 
 				sharespace_pages.foldername.sendKeys(properties.getProperty("foldername"));
+				Thread.sleep(1000);
 
 				sharespace_pages.save.click();
 				Thread.sleep(1000);

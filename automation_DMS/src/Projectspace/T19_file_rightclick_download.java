@@ -47,7 +47,7 @@ public class T19_file_rightclick_download extends common_function{
 		Projectspace_pages.folderclick.click();
 		Thread.sleep(500);
 		Actions action = new Actions(driver);
-        action.contextClick(Projectspace_pages.filepdf).perform();
+        action.contextClick(Projectspace_pages.filepdf2).perform();
         Thread.sleep(500);
         Projectspace_pages.downloadinfile.click();
         Thread.sleep(1000);

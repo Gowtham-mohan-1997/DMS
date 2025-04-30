@@ -31,7 +31,7 @@ public class sharespace_pages {
 	@FindBy(className = "notification_container")
 	public static WebElement actualelement;
 
-	@FindBy(id = "subheader_upload_btn")
+	@FindBy(xpath = "(//div[@test_id=\"subheader_upload_btn\"])[1]")
 	public static WebElement upload; // upload button
 
 	@FindBy(id = "normal_upload_btn")
@@ -173,7 +173,7 @@ public class sharespace_pages {
 //	@FindBy(xpath="//li[@id='move_sub_tree_tv_active']/div/span")
 //    public static WebElement folderclick;
 
-	@FindBy(xpath="//div[@title=\"gowtham2.pdf\"]")
+	@FindBy(xpath="//div[@title=\"11-801-24-06007.pdf\"]")
 	public static WebElement filepdf;
 
 	@FindBy(xpath="//div[@title=\"gowtham1.pdf\"]")
@@ -230,7 +230,7 @@ public class sharespace_pages {
 	@FindBy(xpath="//*[@id=\"share_sub_tree_tv_active\"]/ul/li[1]/div/span")
 	public static WebElement projectfolder; //select the folder inside the project in sendto onfile
 
-	@FindBy(xpath="//*[@id=\"context-menu-grid\"]/li[7]/div/ul/li[4]/span")
+	@FindBy(xpath="//span[@class=\"k-link k-menu-link\" and text()=\"Send To Partner Project\"]")
 	public static WebElement partnerproject;
 
 	@FindBy(xpath="//*[@id=\"share_sub_tree_tv_active\"]/ul/li[1]/div/span")
@@ -302,7 +302,7 @@ public class sharespace_pages {
 	@FindBy(css="div span[class=\"k-link k-link-date\"]")
 	public static WebElement createremaintercalender;
 
-	@FindBy(linkText ="25")
+	@FindBy(linkText ="7")
 	public static WebElement createremaintercalenderdata;
 
 	@FindBy(id="btn_create_reminder_save")

@@ -51,9 +51,10 @@ public class T66_bookmark_file_rightclick_copy extends common_function{
 		Partnerspace_pages.projectfoldetclick.click();
 		Thread.sleep(1000);
 		Partnerspace_pages.bookmark.click();
-		Thread.sleep(1000);
+		Thread.sleep(2000);
 		Actions action = new Actions(driver);
 		action.contextClick(Partnerspace_pages.bookmarkfileclick1).perform();
+
 
 		utility.clickWithWait(Partnerspace_pages.bookmarkfilemoveandcopy);
 

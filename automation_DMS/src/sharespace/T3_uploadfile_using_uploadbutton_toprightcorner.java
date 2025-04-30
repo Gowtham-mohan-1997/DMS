@@ -28,16 +28,19 @@ public class T3_uploadfile_using_uploadbutton_toprightcorner extends common_func
 			try {
 
 				sharespace_pages.document.click();
+				Thread.sleep(500);
 
 				sharespace_pages.Sharespace.click();
+				Thread.sleep(500);
 
 				sharespace_pages.folderclick.click();
+				Thread.sleep(500);
 
 				sharespace_pages.upload.click();
 				Thread.sleep(500);
 				sharespace_pages.files.click();
 				Thread.sleep(500);
-				sharespace_pages.fileupload.sendKeys("/home/gautham/Documents/gowtham2.pdf");
+				sharespace_pages.fileupload.sendKeys("/home/gautham/Documents/11-801-24-06007.pdf");
 				Thread.sleep(500);
 				String actualdata = sharespace_pages.actualelement.getText();
 				System.out.println(actualdata);

@@ -53,7 +53,7 @@ public class T64_bookmark_file_rightclick_move extends common_function{
 		Projectspace_pages.bookmark.click();
 		Thread.sleep(1000);
 		Actions action = new Actions(driver);
-		action.contextClick(Projectspace_pages.bookmarkfileclick1).perform();
+		action.contextClick(Projectspace_pages.filepdf).perform();
 
 		utility.clickWithWait(Projectspace_pages.bookmarkfilemoveandcopy);
 

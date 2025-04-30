@@ -35,17 +35,23 @@ public class T14_folder_rightclick_share extends common_function{
 			try {
 
 				Projectspace_pages.document.click();
+				Thread.sleep(1000);
 
 
 		Projectspace_pages.Projectspace.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectsearch.sendKeys(properties.getProperty("projectname1"));
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectsearch.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectfoldetclick.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.search.sendKeys(properties.getProperty("searchname"));
+		Thread.sleep(1000);
 
 		Projectspace_pages.search.sendKeys(Keys.ENTER);
 		Thread.sleep(500);

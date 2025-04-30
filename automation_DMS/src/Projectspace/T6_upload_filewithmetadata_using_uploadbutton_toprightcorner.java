@@ -27,18 +27,25 @@ public class T6_upload_filewithmetadata_using_uploadbutton_toprightcorner extend
 			try {
 
 				Projectspace_pages.document.click();
+				Thread.sleep(1000);
 
 		Projectspace_pages.Projectspace.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectsearch.sendKeys(properties.getProperty("projectname1"));
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectfoldetclick.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.upload.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.fileuploadmetadata.click();
+		Thread.sleep(1000);
 
-		Projectspace_pages.fileupload.sendKeys("/home/gautham/Documents/gowtham2.pdf");
+		Projectspace_pages.fileupload.sendKeys(properties.getProperty("filename"));
+		Thread.sleep(1000);
 
 		Projectspace_pages.metadataapplyclose.click();
 		Thread.sleep(1000);

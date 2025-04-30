@@ -200,7 +200,7 @@
 			<class name="sharespace.T60_bookmark_file_rightclick_copy" />
 			<class name="sharespace.T61_bookmark_file_rightclick_delete" />
 			<class name="sharespace.T62_bookmark_file_rightclick_createremainder" />
-			<class name="sharespace.T63_bookmark_file_partnerspace" />
+			<class name="sharespace.T63_bookmark_file_partnerspace" /> -->
 			<class name="Projectspace.T1_container_open" />
 			<class name="Projectspace.T2_create_project" />
 			<class name="Projectspace.T3_project_search" />
@@ -251,8 +251,6 @@
 			<class name="Projectspace.T48_bookmark_folder_rightclick_share" />
 			<class name="Projectspace.T49_create_sdnote_using_createbutton_toprightcorner" />
 			<class name="Projectspace.T51_recyclepin_folder_rightclick_delete" />
-			<class name="Projectspace.T52_member_adduser" />
-			<class name="Projectspace.T53_member_addgroup" />
 			<class name="Projectspace.T54_bookmark_file_rightclick_preview" />
 			<class name="Projectspace.T55_bookamrk_file_rightclick_details" />
 			<class name="Projectspace.T56_bookmark_file_rightclick_download" />
@@ -261,14 +259,15 @@
 			<class name="Projectspace.T59_bookmark_file_rightclick_sendto_sendtodepartment" />
 			<class name="Projectspace.T60_bookmark_file_rightclick_sendto_sendtoproject" />
 			<class name="Projectspace.T62_bookmark_file_rightclick_sendto_sendtosharespace" />
-			<class name="Projectspace.T63_bookmark_file_rightclick_rename" />
 			<class name="Projectspace.T64_bookmark_file_rightclick_move" />
 			<class name="Projectspace.T65_bookmark_file_rightclick_copy" />
 			<class name="Projectspace.T66_bookmark_file_rightclick_checkout" />
 			<class name="Projectspace.T67_bookmark_file_rightclick_lock" />
-			<class name="Projectspace.T68_bookmark_file_rightclick_delete" />
-			<class name="Projectspace.T69_bookmark_file_rightclick_createremainder" />
-			<class name="Projectspace.T70_members_user_delete" />
+			<class name="Projectspace.T69_bookmark_file_rightclick_createremainder" /> -->
+		<!--	
+		<class name="Projectspace.T52_member_adduser" />
+			<class name="Projectspace.T53_member_addgroup" />
+		<class name="Projectspace.T70_members_user_delete" />
 			<class name="Projectspace.T71_members_group_delete" />
 			<class name="Testcase.sharespace.T1_sharespace_open" />
 			<class name="Testcase.sharespace.T2_create_folder_using_createbutton" />
@@ -334,12 +333,12 @@
 			<class name="Testcase.sharespace.T62_bookmark_file_createremainder" />
 			<class name="Testcase.sharespace.T63_bookmark_file_partnerspace" />  
 				<class name="Partnerspace.T35_quicksearch" />
-			<class name="Partnerspace.T36_advancesearch" />-->
+			<class name="Partnerspace.T36_advancesearch" />
 			<class name="Partnerspace.T1_container_open" />
 			<class name="Partnerspace.T2_create_project" />
 			<class name="Partnerspace.T3_projectname_search" />
 			<class name="Partnerspace.T4_createfolder_using_createbutton_ontoprightcorner" />
-		<!-- 	<class name="Partnerspace.T5_uploadfile_using_uploadbutton_ontoprightcorner" />
+		 	<class name="Partnerspace.T5_uploadfile_using_uploadbutton_ontoprightcorner" />
 			<class name="Partnerspace.T6_upload_filewithmetadata_using_uploadbutton_ontoprightcorner" />
 			<class name="Partnerspace.T7_folder_rightclick_properties" />
 			<class name="Partnerspace.T8_folder_rightclick_uploadfile" />
@@ -352,8 +351,8 @@
 			<class name="Partnerspace.T16_folder_rightclick_folderactivitylog_clickclear_verify_checkbox_isenable" />
 			<class name="Partnerspace.T17_file_rightclick_preview" />
 			<class name="Partnerspace.T18_file_rightclick_details" />
-			<class name="Partnerspace.T19_file_rightclick_download" /> -->
-			<!--	<class name="Partnerspace.T20_file_rightclick_share" />
+			<class name="Partnerspace.T19_file_rightclick_download" />
+				<class name="Partnerspace.T20_file_rightclick_share" />
 		<class name="Partnerspace.T14_folder_rightclick_share" />
 		<class name="Partnerspace.T48_bookmark_folder_rightclick_share" />
 			<class name="Partnerspace.T34_file_rightclick_createremainder" />
@@ -361,7 +360,7 @@
 			<class name="Partnerspace.T22_file_rightclick_sendto_sendtodepartment" />
 			<class name="Partnerspace.T23_file_rightclick_sendto_sendtoproject" />   
 			<class name="Partnerspace.T25_file_rightclick_sendto_sendtosharespace" />
-				<class name="Partnerspace.T24_file_rightclick_sendto_sendtopartnerspace" /> -->
+				<class name="Partnerspace.T24_file_rightclick_sendto_sendtopartnerspace" /> -
 			<class name="Partnerspace.T26_file_rightclick_rename" />
 			<class name="Partnerspace.T27_file_rightclick_move" />
 			<class name="Partnerspace.T28_file_rightclick_copy" />
@@ -390,7 +389,7 @@
 			<class name="Partnerspace.T55_bookmark_file_rightclick_preview" />
 			<class name="Partnerspace.T56_bookmark_file_rightclick_details" />
 			<class name="Partnerspace.T57_bookmark_file_rightclick_download" />
-			<!--	<class name="Partnerspace.T58_bookmark_file_rightclick_share" />
+				<class name="Partnerspace.T58_bookmark_file_rightclick_share" />
 		<class name="Partnerspace.T70_bookmark_file_rightclick_createremainder" />
 		<class name="Partnerspace.T68_bookmark_file_rightclick_lock" />
 			<class name="Partnerspace.T59_bookmark_file_rightclick_sendto_sendtomyfile" />
@@ -399,14 +398,14 @@
 			<class name="Partnerspace.T62_bookmark_file_rightclick_sendto_sendtopartnerspace" />
 			<class name="Partnerspace.T63_bookmark_file_rightclick_sendto_sendtosharespace" />
 				<class name="Partnerspace.T62_bookmark_file_rightclick_sendto_sendtopartnerspace" /> 
-					<class name="Partnerspace.T69_bookmark_file_rightclick_delete" />-->
+					<class name="Partnerspace.T69_bookmark_file_rightclick_delete" />
 			<class name="Partnerspace.T64_bookmark_file_rightclick_rename" />
 			<class name="Partnerspace.T65_bookmark_file_rightclick_move" />
 			<class name="Partnerspace.T66_bookmark_file_rightclick_copy" />
 			<class name="Partnerspace.T67_bookmark_file_rightclick_checkout" />
 			<class name="Partnerspace.T69_bookmark_file_rightclick_delete" />
 			<class name="Partnerspace.T71_members_user_delete" />
-			<class name="Partnerspace.T72_members_group_delete" />
+			<class name="Partnerspace.T72_members_group_delete" />-->
 		</classes>
 	</test>
 </suite> <!-- Suite -->

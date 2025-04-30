@@ -29,7 +29,7 @@ public class T3_project_search extends common_function {
 
 		Projectspace_pages.Projectspace.click();
 
-		Projectspace_pages.projectsearch.sendKeys("folder");
+		Projectspace_pages.projectsearch.sendKeys(properties.getProperty("projectfoldername"));
 
 		Projectspace_pages.projectfoldetclick.click();
 

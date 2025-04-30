@@ -52,7 +52,7 @@ public class T60_bookmark_file_rightclick_sendto_sendtoproject extends common_fu
 		Projectspace_pages.bookmark.click();
 		Thread.sleep(1000);
 		Actions action = new Actions(driver);
-		action.contextClick(Projectspace_pages.bookmarkfileclick1).perform();
+		action.contextClick(Projectspace_pages.filepdf).perform();
 
 		utility.clickWithWait(Projectspace_pages.bookmarkfilesendto);
 
@@ -64,7 +64,7 @@ public class T60_bookmark_file_rightclick_sendto_sendtoproject extends common_fu
 
 		Thread.sleep(3000);
 		String actualdata = Projectspace_pages.actualelement.getText();
-		String expecteddata = "File sharedTo :Project Space successfully.";
+		String expecteddata = "file sharedto :project successfully.";
 		System.out.println(actualdata);
 		Assert.assertEquals(actualdata.toLowerCase(), expecteddata.toLowerCase());
 

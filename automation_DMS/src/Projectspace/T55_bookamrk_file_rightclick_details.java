@@ -49,7 +49,7 @@ public class T55_bookamrk_file_rightclick_details extends common_function{
 		Projectspace_pages.bookmark.click();
 
 		Actions action = new Actions(driver);
-		action.contextClick(Projectspace_pages.bookmarkfileclick1).perform();
+		action.contextClick(Projectspace_pages.filepdf).perform();
 
 		Projectspace_pages.bookmarkfiledetails.click();
 		Thread.sleep(1000);

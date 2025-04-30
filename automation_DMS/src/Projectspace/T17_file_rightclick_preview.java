@@ -46,7 +46,7 @@ public class T17_file_rightclick_preview extends common_function {
 		Projectspace_pages.folderclick.click();
 		Thread.sleep(1000);
 		Actions action = new Actions(driver);
-		action.contextClick(Projectspace_pages.filepdf).perform();
+		action.contextClick(Projectspace_pages.filepdf2).perform();
 		Thread.sleep(1000);
 		Projectspace_pages.filepreview.click();
 		Thread.sleep(1000);

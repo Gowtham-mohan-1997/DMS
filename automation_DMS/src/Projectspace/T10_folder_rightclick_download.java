@@ -29,21 +29,28 @@ public class T10_folder_rightclick_download extends common_function{
 			try {
 
 				Projectspace_pages.document.click();
+				Thread.sleep(1000);
 
 		Projectspace_pages.Projectspace.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectsearch.sendKeys(properties.getProperty("projectname1"));
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectsearch.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectfoldetclick.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.search.sendKeys(properties.getProperty("searchname"));
+		Thread.sleep(1000);
 
 		Projectspace_pages.search.sendKeys(Keys.ENTER);
 		Thread.sleep(500);
 		Actions action = new Actions(driver);
 		action.contextClick(Projectspace_pages.clickfoldertitle).perform();
+		Thread.sleep(1000);
 
 		Projectspace_pages.downloaddropdown.click();
 		Thread.sleep(1000);

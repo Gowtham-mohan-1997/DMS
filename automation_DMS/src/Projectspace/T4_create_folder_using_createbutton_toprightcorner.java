@@ -30,18 +30,25 @@ public class T4_create_folder_using_createbutton_toprightcorner extends common_f
 				Projectspace_pages.document.click();
 
 
+				Thread.sleep(1000);
 
 		Projectspace_pages.Projectspace.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectsearch.sendKeys(properties.getProperty("projectname1"));
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectfoldetclick.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.create.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.folder.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.foldername.sendKeys(properties.getProperty("foldername"));
+		Thread.sleep(1000);
 
 		Projectspace_pages.save.click();
 		Thread.sleep(1000);

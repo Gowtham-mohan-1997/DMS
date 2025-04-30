@@ -45,7 +45,7 @@ public class T29_file_rightclick_lock extends common_function{
 		sharespace_pages.folderclick.click();
 		Thread.sleep(500);
 		Actions action = new Actions(driver);
-		action.contextClick(sharespace_pages.filepdf1).perform();
+		action.contextClick(sharespace_pages.filepdf).perform();
 		Thread.sleep(500);
 		sharespace_pages.lock.click();
 		Thread.sleep(1000);
@@ -62,7 +62,7 @@ public class T29_file_rightclick_lock extends common_function{
 		sharespace_pages.folderclick.click();
 		Thread.sleep(500);
 		Actions action1 = new Actions(driver);
-		action1.contextClick(sharespace_pages.filepdf1).perform();
+		action1.contextClick(sharespace_pages.filepdf).perform();
 		Thread.sleep(500);
 		sharespace_pages.unlock.click();
 		Thread.sleep(1000);

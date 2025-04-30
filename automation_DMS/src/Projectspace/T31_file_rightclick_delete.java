@@ -64,7 +64,7 @@ public class T31_file_rightclick_delete extends common_function{
 		Thread.sleep(500);
 		Projectspace_pages.files.click();
 		Thread.sleep(500);
-		Projectspace_pages.fileupload.sendKeys("/home/gautham/Documents/gowtham2.pdf");
+		Projectspace_pages.fileupload.sendKeys("/home/gautham/Documents/11-801-24-06007.pdf");
 		Thread.sleep(500);
 		Projectspace_pages.filesinpartnerspace.click();
 		Thread.sleep(500);
@@ -75,7 +75,7 @@ public class T31_file_rightclick_delete extends common_function{
 		Projectspace_pages.folderclick.click();
 		Thread.sleep(500);
 		Actions action = new Actions(driver);
-        action.contextClick(Projectspace_pages.filepdf).perform();
+        action.contextClick(Projectspace_pages.filepdf2).perform();
         Thread.sleep(500);
         Projectspace_pages.deleteonfile.click();
         Thread.sleep(500);

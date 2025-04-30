@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="myfile.T66_bookmark_file_rightclick_copy">
+      <class name="Projectspace.T25_file_rightclick_sendto_sendtosharespace">
         <methods>
-          <include name="s1_bookmark_file_copy"/>
+          <include name="s1_sendto_sharespace_onfile"/>
           <include name="launchbrowser"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- myfile.T66_bookmark_file_rightclick_copy -->
+      </class> <!-- Projectspace.T25_file_rightclick_sendto_sendtosharespace -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

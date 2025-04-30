@@ -48,7 +48,7 @@ public class T5_uploadfile_using_uploadbutton_ontoprightcorner extends common_fu
 		Thread.sleep(500);
 		Partnerspace_pages.files.click();
 		Thread.sleep(500);
-        Partnerspace_pages.fileupload.sendKeys("/home/gautham/Documents/gowtham2.pdf");
+        Partnerspace_pages.fileupload.sendKeys("/home/gautham/Documents/11-801-24-06007.pdf");
 		Thread.sleep(500);
 		String actualdata =Partnerspace_pages.actualelement.getText();
 		System.out.println(actualdata);

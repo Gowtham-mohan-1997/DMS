@@ -56,7 +56,7 @@ public class T25_file_rightclick_rename extends common_function{
 		Thread.sleep(500);
 		sharespace_pages.files.click();
 		Thread.sleep(500);
-		sharespace_pages.fileupload.sendKeys("/home/gautham/Documents/gowtham2.pdf");
+		sharespace_pages.fileupload.sendKeys("/home/gautham/Documents/11-801-24-06007.pdf");
 		Thread.sleep(500);
 		sharespace_pages.filesindepartment.click();
 		Thread.sleep(500);

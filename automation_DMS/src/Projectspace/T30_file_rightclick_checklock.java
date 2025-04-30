@@ -53,7 +53,7 @@ public class T30_file_rightclick_checklock extends common_function{
 		Projectspace_pages.folderclick.click();
 		Thread.sleep(500);
 		Actions action = new Actions(driver);
-        action.contextClick(Projectspace_pages.filepdf1).perform();
+        action.contextClick(Projectspace_pages.filepdf2).perform();
         Thread.sleep(500);
         Projectspace_pages.lock.click();
         Thread.sleep(1000);
@@ -73,7 +73,7 @@ public class T30_file_rightclick_checklock extends common_function{
 		Projectspace_pages.folderclick.click();
 		Thread.sleep(500);
 		Actions action1 = new Actions(driver);
-        action1.contextClick(Projectspace_pages.filepdf1).perform();
+        action1.contextClick(Projectspace_pages.filepdf2).perform();
         Thread.sleep(500);
         Projectspace_pages.unlock.click();
         Thread.sleep(1000);

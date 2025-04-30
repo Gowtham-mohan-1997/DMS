@@ -11,7 +11,7 @@ import DMS_page.lookup_function;
 import DMS_page.utility;
 import common_function.common_function;
 
-public class T59_bookmark_file_rightclick_sendto_sendtomyfile extends common_function{
+public class T59_bookmark_file_rightclick_sendto_sendtomyfile extends common_function {
 	public void login_userui() throws InterruptedException {
 		PageFactory.initElements(driver, login_page.class);
 		login_page.username.sendKeys(properties.getProperty("username"));
@@ -54,8 +54,9 @@ public class T59_bookmark_file_rightclick_sendto_sendtomyfile extends common_fun
 		action.contextClick(Partnerspace_pages.bookmarkfileclick1).perform();
 
 		utility.clickWithWait(Partnerspace_pages.bookmarkfilesendto);
-
-		utility.clickWithWait(Partnerspace_pages.bookmarkfilesendtomyfile);
+		Thread.sleep(1000);
+		Partnerspace_pages.bookmarkfilesendtomyfile.click();
+		;
 //		Projectspace_pages.bookmarkfilesendtomyfile.click();
 
 		utility.clickWithWait(Partnerspace_pages.bookmarkfiledepartmentfolderclick);

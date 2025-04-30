@@ -28,18 +28,25 @@ public class T7_folder_rightclick_properties extends common_function{
 			try {
 
 				Projectspace_pages.document.click();
+				Thread.sleep(1000);
 
 		Projectspace_pages.Projectspace.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectsearch.sendKeys(properties.getProperty("projectname1"));
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectsearch.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectfoldetclick.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.search.sendKeys(properties.getProperty("searchname"));
+		Thread.sleep(1000);
 
 		Projectspace_pages.search.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 
 		Actions action = new Actions(driver);
 		action.contextClick(Projectspace_pages.clickfoldertitle).perform();
@@ -49,8 +56,10 @@ public class T7_folder_rightclick_properties extends common_function{
 		String text = Projectspace_pages.propertiesdata.getText();
 		System.out.println("text" + text);
 		Projectspace_pages.advance.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.advancediscription.sendKeys("advance");
+		Thread.sleep(1000);
 
 		Projectspace_pages.advancediscriptionsave.click();
 		Thread.sleep(1000);

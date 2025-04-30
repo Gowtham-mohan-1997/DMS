@@ -46,7 +46,7 @@ public class T18_file_rightclick_details  extends common_function{
 		Projectspace_pages.folderclick.click();
 		Thread.sleep(1000);
 		Actions action = new Actions(driver);
-        action.contextClick(Projectspace_pages.filepdf).perform();
+        action.contextClick(Projectspace_pages.filepdf2).perform();
         Thread.sleep(1000);
         Projectspace_pages.detailsinfile.click();
        String actualdata= Projectspace_pages.details.getText();

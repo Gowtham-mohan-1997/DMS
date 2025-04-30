@@ -190,9 +190,12 @@ public class Projectspace_pages {
 	@FindBy(css="//*[@id=\"move_sub_tree_tv_active\"]/ul/li[1]/div/span")
     public static WebElement folderclick1;
 
-	@FindBy(xpath="//div[@title=\"gowtham2.pdf\"]")
+	@FindBy(xpath="(//div[@title=\"11-801-24-06007.pdf\"])[2]")
 	public static WebElement filepdf;
 
+	@FindBy(xpath="/html/body/div[3]/div/div/div[3]/div[1]/div/div[44]/div[2]/div/div/div/div[3]/div[2]/table/tbody/tr[2]/td[2]")
+	public static WebElement filepdf2;
+	
 	@FindBy(css="ul#context-menu-grid span[class=\"k-sprite icon-ic_action_preview\"]")
 	public static WebElement filepreview;
 
@@ -238,22 +241,22 @@ public class Projectspace_pages {
 	@FindBy(xpath="//*[@id=\"share_sub_tree_tv_active\"]/ul/li[1]/div/span")
 	public static WebElement departmentfolder;
 
-	@FindBy(xpath="//*[@id=\"context-menu-grid\"]/li[7]/div/ul/li[3]/span")
+	@FindBy(xpath="//*[@id=\"context-menu-grid\"]/li[7]/div/ul/li[2]/span/span")
 	public static WebElement project;//project in sendto on file
 
 	@FindBy(xpath="//*[@id=\"share_sub_tree_tv_active\"]/ul/li[1]/div/span")
 	public static WebElement projectfolder; //select the folder inside the project in sendto onfile
 
-	@FindBy(xpath="//*[@id=\"context-menu-grid\"]/li[7]/div/ul/li[4]/span")
+	@FindBy(xpath="//*[@id=\"context-menu-grid\"]/li[7]/div/ul/li[3]/span/span")
 	public static WebElement partnerproject;
 
 	@FindBy(xpath="//*[@id=\"share_sub_tree_tv_active\"]/ul/li[1]/div/span")
 	public static WebElement partnerprojectfolder;
 
-	@FindBy(xpath="//*[@id=\"context-menu-grid\"]/li[7]/div/ul/li[6]/span")
+	@FindBy(xpath="//*[@id=\"context-menu-grid\"]/li[7]/div/ul/li[4]/span/span")
 	public static WebElement sharespace;
 
-	@FindBy(xpath="//*[@id=\"share_sub_tree\"]/li[1]/div/span")
+	@FindBy(xpath="//*[@id=\"share_sub_tree\"]/li/ul/li[1]/div/span")
 	public static WebElement sharespacefolder;
 
 	@FindBy(css="ul#context-menu-grid span[class=\"k-sprite icon-ic_context_rename\"]")
@@ -512,7 +515,7 @@ public class Projectspace_pages {
 	@FindBy(xpath="//*[@id=\"grid_mybookmark_list\"]/div[2]/table/tbody/tr[5]/td[2]")
 	public static WebElement bookmarkfileclick1;
 
-	@FindBy(css="ul#collaboration_bookmarks_c_menu span[class=\"k-sprite icon-ic_action_preview\"]")
+	@FindBy(xpath="(//span[text()=\"Preview\"])[2]")
 	public static WebElement bookmarkfilepreview;
 
 
@@ -546,7 +549,7 @@ public class Projectspace_pages {
 	@FindBy(xpath="//*[@id=\"share_sub_tree_tv_active\"]/ul/li[1]/div/span")
 	public static WebElement bookmarkfiledepartmentfolderclick;
 
-	@FindBy(css="ul#share_sub_tree span[class=\"k-in\"]")
+	@FindBy(xpath="//*[@id=\"share_sub_tree\"]/li/ul/li[2]/div/span")
 	public static WebElement bookmarkfilesharespacefolderclick;
 
 	@FindBy(id="share_send_btn")

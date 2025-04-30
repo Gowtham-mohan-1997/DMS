@@ -42,19 +42,24 @@ public class T54_bookmark_file_rightclick_preview extends common_function{
 		}
 		Thread.sleep(2000);
 		Projectspace_pages.Projectspace.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectsearch.sendKeys(properties.getProperty("projectname1"));
-
+		Thread.sleep(1000);
 		Projectspace_pages.projectsearch.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectfoldetclick.click();
+		Thread.sleep(1000);
 
 		utility.clickWithWait(Projectspace_pages.bookmark);
-		Thread.sleep(2000);
+		Thread.sleep(3000);
 		Actions action = new Actions(driver);
-		action.contextClick(Projectspace_pages.bookmarkfileclick1).perform();
+		action.contextClick(Projectspace_pages.filepdf).perform();
+		Thread.sleep(2000);
 
 		utility.clickWithWait(Projectspace_pages.bookmarkfilepreview);
+		Thread.sleep(1000);
 
 		System.out.println("start");
         driver.switchTo().frame(driver.findElement(By.tagName("object")));

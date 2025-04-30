@@ -36,14 +36,19 @@ public class T15_folder_rightclick_folderactivitylog_verify_textbox_isenable ext
 
 		}
 		Projectspace_pages.Projectspace.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectsearch.sendKeys(properties.getProperty("projectname1"));
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectsearch.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectfoldetclick.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.search.sendKeys(properties.getProperty("searchname"));
+		Thread.sleep(1000);
 
 		Projectspace_pages.search.sendKeys(Keys.ENTER);
 		Thread.sleep(500);

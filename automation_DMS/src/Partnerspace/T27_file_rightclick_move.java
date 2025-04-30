@@ -65,7 +65,7 @@ public class T27_file_rightclick_move extends common_function{
 		Thread.sleep(500);
 		Partnerspace_pages.files.click();
 		Thread.sleep(500);
-		Partnerspace_pages.fileupload.sendKeys("/home/gautham/Documents/gowtham2.pdf");
+		Partnerspace_pages.fileupload.sendKeys("/home/gautham/Documents/11-801-24-06007.pdf");
 		Thread.sleep(500);
 		Partnerspace_pages.filesinpartnerspace.click();
 		Thread.sleep(500);

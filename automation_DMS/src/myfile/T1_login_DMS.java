@@ -1,5 +1,8 @@
 package myfile;
 
+import java.util.Iterator;
+import java.util.Set;
+
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
@@ -18,9 +21,30 @@ public class T1_login_DMS extends common_function {
 
 	}
 
-	@Test(invocationCount = 2)
+	@Test(priority=1)
 	public void S1_login_ui() throws InterruptedException {
+		
+		PageFactory.initElements(driver, login_page.class);
+
 		login_userui();
+		Thread.sleep(5000);
+		login_page.cms.click();
+		Thread.sleep(2000);
+
+
+		String currenttab=driver.getWindowHandle();
+		
+		Set<String> alltab=driver.getWindowHandles();
+		
+		for(String tab:alltab) {
+			if(!tab.equals(currenttab)) {
+				driver.switchTo().window(tab);
+				break;
+			}
+		}
+		
+		login_page.cmslist.click();
+		Thread.sleep(10000);
 
 	}
 

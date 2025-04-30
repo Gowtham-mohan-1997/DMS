@@ -4,13 +4,13 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class Partnerspace_pages {
-	@FindBy(id = "sidebar-Documents-lbl")
+	@FindBy(xpath = "//span[text()=\"Documents\"]")
 	public static WebElement document;
 
 	@FindBy(xpath="//*[@id=\"move_sub_tree_tv_active\"]/ul/li[1]/div/span")
 	public static WebElement clickfoldermove;
 //
-	@FindBy(xpath= "/html/body/div[3]/div/div/div[3]/div[1]/div/div/div[2]/div/div/div[1]/div/div[2]/div[4]/div/div[2]/div[2]/div/div[5]/div/div[3]")
+	@FindBy(xpath= "(//div[@id=\"partner_projects\"])[2]")
 	public static WebElement partnerspace;
 //	@FindBy(xpath= "/html/body/div[3]/div/div/div[3]/div[1]/div/div/div[2]/div/div/div[1]/div/div[2]/div[4]/div/div[2]/div[2]/div/div[4]/div")
 //	public static WebElement partnerspace;
@@ -18,7 +18,7 @@ public class Partnerspace_pages {
 //	@FindBy(xpath="/html/body/div[3]/div/div/div[3]/div[1]/div/div/div[2]/div/div/div[1]/div/div[2]/div[4]/div/div[2]/div[2]/div/div[5]/div/div[3]/div[1]")
 //	public static WebElement partnerspace;
 //
-	@FindBy(id = "create_project_btn")
+	@FindBy(xpath = "//div[text()=\"Create Project\"]")
 	public static WebElement createproject;
 
 //	@FindBy(css="th#e572c49c-8539-41ec-b9fa-a4b082776732 i[id=\"gridheader_back_btn\"]")
@@ -187,10 +187,10 @@ public class Partnerspace_pages {
 //	@FindBy(xpath="//*[@id=\"move_sub_tree_tv_active\"]/ul/li[1]/div/span")
 //	public static WebElement folderclick;
 
-	@FindBy(xpath="//div[@title=\"gowtham2.pdf\"]")
+	@FindBy(xpath="//div[@title=\"11-801-24-06007.pdf\"]")
 	public static WebElement filepdf;
 
-	@FindBy(xpath="//div[@title=\"gowtham1.pdf\"]")
+	@FindBy(xpath="//div[@title=\"11-801-24-06007.pdf\"]")
 	public static WebElement filepdf1;
 
 	@FindBy(css="ul#context-menu-grid span[class=\"k-sprite icon-ic_action_preview\"]")
@@ -223,7 +223,7 @@ public class Partnerspace_pages {
 	@FindBy(xpath="//*[@id=\"context-menu-grid\"]/li[7]/span")
 	public static WebElement sendtodropdownonfile;
 
-	@FindBy(xpath="//*[@id=\"context-menu-grid\"]/li[7]/div/ul/li[1]/span")
+	@FindBy(xpath="//span[@class=\"k-link k-menu-link\" and text()='Send To MyFiles']")
 	public static WebElement myfilessendto;   //department in sendto on file dropdown
 
 	@FindBy(xpath="//*[@id=\"share_sub_tree_tv_active\"]/ul/li[1]/div/span")
@@ -244,16 +244,16 @@ public class Partnerspace_pages {
 	@FindBy(xpath="//*[@id=\"share_sub_tree_tv_active\"]/ul/li[1]/div/span")
 	public static WebElement projectfolder; //select the folder inside the project in sendto onfile
 
-	@FindBy(xpath="//*[@id=\"context-menu-grid\"]/li[7]/div/ul/li[4]/span")
+	@FindBy(xpath="//span[@class=\"k-link k-menu-link\" and text()='Send To Partner Project']")
 	public static WebElement partnerproject;
 
 	@FindBy(xpath="//*[@id=\"share_sub_tree_tv_active\"]/ul/li[1]/div/span")
 	public static WebElement partnerprojectfolder;
 
-	@FindBy(xpath="//*[@id=\"context-menu-grid\"]/li[7]/div/ul/li[6]/span")
+	@FindBy(xpath="//span[@class=\"k-link k-menu-link\" and text()='Send To ShareSpace']")
 	public static WebElement sharespace;
 
-	@FindBy(xpath="//*[@id=\"share_sub_tree\"]/li[1]/div/span")
+	@FindBy(xpath="//*[@id=\"share_sub_tree\"]/li/ul/li[1]/div/span")
 	public static WebElement sharespacefolder;
 
 	@FindBy(css="ul#context-menu-grid span[class=\"k-sprite icon-ic_context_rename\"]")
@@ -282,13 +282,13 @@ public class Partnerspace_pages {
 	@FindBy(css="ul#context-menu-grid span[class=\"k-sprite icon-ic_action_locked\"]")
 	public static WebElement undocheckout;
 
-	@FindBy(xpath="//*[@id=\"context-menu-grid\"]/li[11]/span")
+	@FindBy(xpath="//span[@class=\"k-link k-menu-link\" and text()=\"Lock\"]")
 	public static WebElement lock;
 
 	@FindBy(id="gridheader_back_btn")
 	public static WebElement backbuttonfolder;
 
-	@FindBy(xpath="//*[@id=\"context-menu-grid\"]/li[9]/span")
+	@FindBy(xpath="//span[@class=\"k-link k-menu-link\" and text()=\"Unlock\"]")
 	public static WebElement unlock;
 
 
@@ -327,7 +327,7 @@ public class Partnerspace_pages {
 	public static WebElement closeonfileactivitylog;
 
 
-	@FindBy(xpath="//*[@id=\"context-menu-grid\"]/li[17]/span")
+	@FindBy(xpath="//span[text()=\"Create Reminder\"]")
 	public static WebElement createremainteronfile;
 
 
@@ -337,7 +337,7 @@ public class Partnerspace_pages {
 	@FindBy(xpath="//*[@id=\"rmdBasicDiv\"]/div[2]/form/div[1]/div[2]/div[2]/span/span/span/span[1]")
 	public static WebElement createremaintercalender;
 
-	@FindBy(xpath="//a[contains(text(),'17')]")
+	@FindBy(xpath="//a[contains(text(),'20')]")
 	public static WebElement createremainterdate;
 
 	@FindBy(id="btn_create_reminder_save")
@@ -509,10 +509,10 @@ public class Partnerspace_pages {
 	@FindBy(xpath="//*[@id=\"menu_file\"]")
 	public static WebElement filesinpartnerspace;
 
-	@FindBy(xpath="//*[@id=\"grid_mybookmark_list\"]/div[2]/table/tbody/tr[9]/td[2]/div/div[2]/div[1]")
+	@FindBy(xpath="//*[@id=\"grid_mybookmark_list\"]/div[2]/table/tbody/tr[4]/td[2]")
 	public static WebElement bookmarkfileclick1;
 
-	@FindBy(xpath="//*[@id=\"collaboration_bookmarks_c_menu_mn_active\"]/span")
+	@FindBy(xpath="(//span[text()=\"Preview\"])[2]")
 	public static WebElement bookmarkfilepreview;
 
 
@@ -530,14 +530,14 @@ public class Partnerspace_pages {
 	public static WebElement bookmarkfileshare;
 
 
-	@FindBy(xpath="//span[contains(.,'Send To MyFiles')]")
+	@FindBy(xpath="(//span[@class=\"k-link k-menu-link\" and text()='Send To MyFiles'])[2]")
 	public static WebElement bookmarkfilesendtomyfile;
 
 	@FindBy(id="sh_share_popup_copylink_btn")
 	public static WebElement bookmarkfilesharecopylink;
 
 
-	@FindBy(xpath="//*[@id=\"collaboration_bookmarks_c_menu\"]/li[6]/span")
+	@FindBy(xpath="(//span[@class=\"k-link k-menu-link\"])[39]")
 	public static WebElement bookmarkfilesendto;
 
 	@FindBy(xpath="//span[contains(.,'Send To Department')]")
@@ -583,7 +583,7 @@ public class Partnerspace_pages {
 	public static WebElement bookmarkfiledelete;
 
 
-	@FindBy(xpath="//*[@id=\"collaboration_bookmarks_c_menu\"]/li[17]/span")
+	@FindBy(xpath="//span[@class=\"k-link k-menu-link\" and text()=\"Create Reminder\"]")
 	public static WebElement bookmarkfileremainter;
 
 	@FindBy(id="rmd_name_txt")

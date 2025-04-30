@@ -44,7 +44,7 @@ public class T40_bookmark_folder_rightclick_uploadfile extends common_function{
 		Thread.sleep(500);
 		sharespace_pages.uploadfileonbookmark.click();
 		Thread.sleep(500);
-		sharespace_pages.fileupload.sendKeys("/home/gautham/Documents/gowtham2.pdf");
+		sharespace_pages.fileupload.sendKeys("/home/gautham/Documents/11-801-24-06007.pdf");
 		Thread.sleep(1000);
 		String actualdata =sharespace_pages.actualelement.getText();
 		System.out.println(actualdata);

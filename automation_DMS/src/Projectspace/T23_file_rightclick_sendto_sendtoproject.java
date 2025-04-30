@@ -53,10 +53,10 @@ public class T23_file_rightclick_sendto_sendtoproject extends common_function{
 		Projectspace_pages.folderclick.click();
 		Thread.sleep(500);
 		Actions action = new Actions(driver);
-        action.contextClick(Projectspace_pages.filepdf).perform();
+        action.contextClick(Projectspace_pages.filepdf2).perform();
         Thread.sleep(500);
         Projectspace_pages.sendtodropdownonfile.click();
-        Thread.sleep(500);
+        Thread.sleep(1000);
         Projectspace_pages.project.click();
         Thread.sleep(500);
         Projectspace_pages.projectfolder.click();

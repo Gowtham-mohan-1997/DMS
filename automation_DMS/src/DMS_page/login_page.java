@@ -13,4 +13,10 @@ public class login_page {
 	@FindBy(css="div a[id=\"login_signin_btn\"]")
 	public static WebElement login;
 
+	
+	@FindBy(xpath="(//span[text()=\" CONTRACT MANAGEMENT \"])[1]")
+	public static WebElement cms;
+	
+	@FindBy(xpath="//span[text()=\" Contract List \"]")
+	public static WebElement cmslist;
 }

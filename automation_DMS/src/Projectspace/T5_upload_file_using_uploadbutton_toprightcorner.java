@@ -1,5 +1,8 @@
 package Projectspace;
 
+import java.awt.RenderingHints.Key;
+
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -27,18 +30,25 @@ public class T5_upload_file_using_uploadbutton_toprightcorner extends common_fun
 			try {
 
 				Projectspace_pages.document.click();
+				Thread.sleep(1000);
 
 		Projectspace_pages.Projectspace.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectsearch.sendKeys(properties.getProperty("projectname1"));
-
+		Thread.sleep(1000);
+		Projectspace_pages.projectsearch.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 		Projectspace_pages.projectfoldetclick.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.upload.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.files.click();
+		Thread.sleep(1000);
 
-		Projectspace_pages.fileupload.sendKeys("/home/gautham/Documents/gowtham2.pdf");
+		Projectspace_pages.fileupload.sendKeys(properties.getProperty("filename"));
 		Thread.sleep(1000);
 		String actualdata =Projectspace_pages.actualelement.getText();
 		System.out.println(actualdata);

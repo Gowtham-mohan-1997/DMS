@@ -53,7 +53,7 @@ public class T29_file_rightclick_checkout extends common_function{
 		Projectspace_pages.folderclick.click();
 		Thread.sleep(500);
 		Actions action = new Actions(driver);
-        action.contextClick(Projectspace_pages.filepdf).perform();
+        action.contextClick(Projectspace_pages.filepdf2).perform();
         Thread.sleep(500);
         Projectspace_pages.checkout.click();
         Thread.sleep(500);
@@ -73,7 +73,7 @@ public class T29_file_rightclick_checkout extends common_function{
 		Projectspace_pages.folderclick.click();
 		Thread.sleep(500);
 		Actions action1 = new Actions(driver);
-        action1.contextClick(Projectspace_pages.filepdf).perform();
+        action1.contextClick(Projectspace_pages.filepdf2).perform();
         Thread.sleep(500);
         Projectspace_pages.undocheckout.click();
         Thread.sleep(500);

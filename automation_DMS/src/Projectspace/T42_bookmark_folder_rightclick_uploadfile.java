@@ -51,7 +51,7 @@ public class T42_bookmark_folder_rightclick_uploadfile extends common_function{
 		Thread.sleep(500);
 		Projectspace_pages.uploadfileonbookmark.click();
 		Thread.sleep(500);
-		Projectspace_pages.fileupload.sendKeys("/home/gautham/Documents/gowtham2.pdf");
+		Projectspace_pages.fileupload.sendKeys(properties.getProperty("filename"));
 		Thread.sleep(500);
 		String actualdata =Projectspace_pages.actualelement.getText();
 		System.out.println(actualdata);

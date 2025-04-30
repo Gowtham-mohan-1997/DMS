@@ -37,29 +37,40 @@ public class T13_folder_rightclick_delete extends common_function{
 
 		}
 		Projectspace_pages.Projectspace.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectsearch.sendKeys(properties.getProperty("projectname1"));
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectsearch.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectfoldetclick.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.create.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.folder.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.foldername.sendKeys(properties.getProperty("deletename"));
+		Thread.sleep(1000);
 
 		Projectspace_pages.save.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.search.sendKeys(properties.getProperty("deletename"));
+		Thread.sleep(1000);
 
 		Projectspace_pages.search.sendKeys(Keys.ENTER);
 		Thread.sleep(500);
 		Actions action = new Actions(driver);
 		action.contextClick(Projectspace_pages.clickfoldertitle).perform();
+		Thread.sleep(1000);
 
 		Projectspace_pages.deletedropdown.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.deletepopup.click();
 		Thread.sleep(1000);

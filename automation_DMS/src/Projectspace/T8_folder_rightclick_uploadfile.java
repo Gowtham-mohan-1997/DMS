@@ -29,17 +29,23 @@ public class T8_folder_rightclick_uploadfile extends common_function {
 			try {
 
 				Projectspace_pages.document.click();
+				Thread.sleep(1000);
 
 
 		Projectspace_pages.Projectspace.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectsearch.sendKeys(properties.getProperty("projectname1"));
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectsearch.sendKeys(Keys.ENTER);
+		Thread.sleep(1000);
 
 		Projectspace_pages.projectfoldetclick.click();
+		Thread.sleep(1000);
 
 		Projectspace_pages.search.sendKeys(properties.getProperty("searchname"));
+		Thread.sleep(1000);
 
 		Projectspace_pages.search.sendKeys(Keys.ENTER);
 		Thread.sleep(500);
@@ -47,8 +53,9 @@ public class T8_folder_rightclick_uploadfile extends common_function {
 		action.contextClick(Projectspace_pages.clickfoldertitle).perform();
 
 		Projectspace_pages.uploaddropdownfolder.click();
+		Thread.sleep(1000);
 
-		Projectspace_pages.fileupload.sendKeys("/home/gautham/Documents/gowtham2.pdf");
+		Projectspace_pages.fileupload.sendKeys(properties.getProperty("filename"));
 		Thread.sleep(1000);
 		String actualdata = Projectspace_pages.actualelement.getText();
 		System.out.println(actualdata);

@@ -55,7 +55,7 @@ public class T57_bookmark_file_rightclick_share extends common_function {
 		Thread.sleep(1000);
 		Projectspace_pages.bookmark.click();
 		Actions action = new Actions(driver);
-		action.contextClick(Projectspace_pages.bookmarkfileclick1).perform();
+		action.contextClick(Projectspace_pages.filepdf).perform();
 
 		Projectspace_pages.bookmarkfileshare.click();
 		Thread.sleep(1000);

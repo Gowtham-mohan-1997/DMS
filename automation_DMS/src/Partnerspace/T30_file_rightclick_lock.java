@@ -55,8 +55,10 @@ public class T30_file_rightclick_lock extends common_function{
 		Thread.sleep(500);
 		Actions action = new Actions(driver);
         action.contextClick(Partnerspace_pages.filepdf1).perform();
-        Thread.sleep(500);
-        Partnerspace_pages.lock.click();
+        Thread.sleep(2000);
+        
+        action.doubleClick(Partnerspace_pages.lock).perform();
+        //Partnerspace_pages.lock.click();
         Thread.sleep(1000);
 
         String actualdata=Partnerspace_pages.actualelement.getText();
@@ -75,8 +77,10 @@ public class T30_file_rightclick_lock extends common_function{
 		Thread.sleep(500);
 		Actions action1 = new Actions(driver);
         action1.contextClick(Partnerspace_pages.filepdf1).perform();
-        Thread.sleep(500);
-        Partnerspace_pages.unlock.click();
+        Thread.sleep(1000);
+        action.doubleClick(Partnerspace_pages.unlock).perform();
+
+        //Partnerspace_pages.unlock.click();
         Thread.sleep(1000);
         String actualdata1=Partnerspace_pages.actualelement.getText();
         System.out.println(actualdata1);
