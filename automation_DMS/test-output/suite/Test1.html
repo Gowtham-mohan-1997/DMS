@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test1</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>52/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>48/11/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Nov 07 14:34:57 IST 2023</td>
+<td>Started on:</td><td>Wed Apr 30 15:49:32 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>908 seconds (908021 ms)</td>
+<tr><td>Total time:</td><td>1725 seconds (1725660 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,22 +75,65 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Partnerspace.T69_bookmark_file_rightclick_delete.s1_bookmark_file_delete()'><b>s1_bookmark_file_delete</b><br>Test class: Partnerspace.T69_bookmark_file_rightclick_delete</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: delete_save_btn&apos; (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at DMS_page.utility.clickWithWait(utility.java:17)
-	at Partnerspace.T69_bookmark_file_rightclick_delete.s1_bookmark_file_delete(T69_bookmark_file_rightclick_delete.java:59)
+<td title='sharespace.T63_bookmark_file_partnerspace.s1_bookmark_file_partnerspace()'><b>s1_bookmark_file_partnerspace</b><br>Test class: sharespace.T63_bookmark_file_partnerspace</td>
+<td><div><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-138-generic&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e60ec99669e600304172c33a6a37770e, actions {actions=[org.openqa.selenium.interactions.Sequence@38b0f7f5]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42429/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e60ec99669e600304172c33a6a37770e
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:122)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
+	at sharespace.T63_bookmark_file_partnerspace.s1_bookmark_file_partnerspace(T63_bookmark_file_partnerspace.java:55)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#delete_save_btn&quot;}
-  (Session info: chrome=113.0.5672.126)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-138-generic&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:303)
+		at org.openqa.selenium.json.Json.toJson(Json.java:40)
+		... 38 more
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
+	... 59 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;grid_mybookmark_list&quot;]/div[2]/table/tbody/tr[5]/td[2]&quot;}
+  (Session info: chrome=120.0.6099.109)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-84-generic&apos;, java.version: &apos;17.0.5&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-138-generic&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e7a840e8060c57dd102befa16dd1748a, findElement {using=id, value=delete_save_btn}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.126, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: /tmp/.com.google.Chrome.EXpVta}, goog:chromeOptions: {debuggerAddress: localhost:44065}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44065/devtoo..., se:cdpVersion: 113.0.5672.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e7a840e8060c57dd102befa16dd1748a
+Command: [e60ec99669e600304172c33a6a37770e, findElement {using=xpath, value=//*[@id=&quot;grid_mybookmark_list&quot;]/div[2]/table/tbody/tr[5]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42429/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e60ec99669e600304172c33a6a37770e
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -104,21 +147,52 @@ Session ID: e7a840e8060c57dd102befa16dd1748a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 30 more
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace424954934", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace424954934'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.id: delete_save_btn&apos; (tried for 30 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
-	at DMS_page.utility.clickWithWait(utility.java:17)
-	at Partnerspace.T69_bookmark_file_rightclick_delete.s1_bookmark_file_delete(T69_bookmark_file_rightclick_delete.java:59)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:269)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:218)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
+	... 63 more
+... Removed 36 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1146678456", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1146678456'><pre>org.openqa.selenium.json.JsonException: java.lang.reflect.InvocationTargetException
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-138-generic&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [e60ec99669e600304172c33a6a37770e, actions {actions=[org.openqa.selenium.interactions.Sequence@38b0f7f5]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42429/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e60ec99669e600304172c33a6a37770e
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:362)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$16(JsonOutput.java:154)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$22(JsonOutput.java:169)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:183)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:150)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:173)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$23(JsonOutput.java:169)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$24(JsonOutput.java:182)
+	at com.google.common.collect.SingletonImmutableBiMap.forEach(SingletonImmutableBiMap.java:68)
+	at org.openqa.selenium.json.JsonOutput.lambda$new$25(JsonOutput.java:177)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:287)
+	at org.openqa.selenium.json.JsonOutput.write(JsonOutput.java:278)
+	at org.openqa.selenium.json.Json.toJson(Json.java:42)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:259)
+	at org.openqa.selenium.remote.codec.AbstractHttpCommandCodec.encode(AbstractHttpCommandCodec.java:122)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:172)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:611)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:567)
+	at org.openqa.selenium.interactions.Actions.perform(Actions.java:536)
+	at sharespace.T63_bookmark_file_partnerspace.s1_bookmark_file_partnerspace(T63_bookmark_file_partnerspace.java:55)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -147,15 +221,28 @@ Session ID: e7a840e8060c57dd102befa16dd1748a
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#delete_save_btn&quot;}
-  (Session info: chrome=113.0.5672.126)
+	Suppressed: org.openqa.selenium.json.JsonException: Attempting to close incomplete json stream
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-138-generic&apos;, java.version: &apos;17.0.5&apos;
+Driver info: driver.version: RemoteWebDriver
+		at org.openqa.selenium.json.JsonOutput.close(JsonOutput.java:303)
+		at org.openqa.selenium.json.Json.toJson(Json.java:40)
+		... 38 more
+Caused by: java.lang.reflect.InvocationTargetException
+	at jdk.internal.reflect.GeneratedMethodAccessor30.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.openqa.selenium.json.JsonOutput.convertUsingMethod(JsonOutput.java:358)
+	... 59 more
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&quot;grid_mybookmark_list&quot;]/div[2]/table/tbody/tr[5]/td[2]&quot;}
+  (Session info: chrome=120.0.6099.109)
 For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
-System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-84-generic&apos;, java.version: &apos;17.0.5&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-138-generic&apos;, java.version: &apos;17.0.5&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [e7a840e8060c57dd102befa16dd1748a, findElement {using=id, value=delete_save_btn}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 113.0.5672.126, chrome: {chromedriverVersion: 113.0.5672.63 (0e1a4471d5ae..., userDataDir: /tmp/.com.google.Chrome.EXpVta}, goog:chromeOptions: {debuggerAddress: localhost:44065}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:44065/devtoo..., se:cdpVersion: 113.0.5672.126, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e7a840e8060c57dd102befa16dd1748a
+Command: [e60ec99669e600304172c33a6a37770e, findElement {using=xpath, value=//*[@id=&quot;grid_mybookmark_list&quot;]/div[2]/table/tbody/tr[5]/td[2]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:42429}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:42429/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: e60ec99669e600304172c33a6a37770e
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -174,18 +261,508 @@ Session ID: e7a840e8060c57dd102befa16dd1748a
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
 	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
-	at jdk.proxy2/jdk.proxy2.$Proxy18.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:660)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
-	... 30 more
+	at jdk.proxy2/jdk.proxy2.$Proxy18.getWrappedElement(Unknown Source)
+	at org.openqa.selenium.interactions.PointerInput$Origin.asArg(PointerInput.java:269)
+	at org.openqa.selenium.interactions.PointerInput$Move.encode(PointerInput.java:218)
+	at org.openqa.selenium.interactions.Sequence.encode(Sequence.java:73)
+	at org.openqa.selenium.interactions.Sequence.toJson(Sequence.java:82)
+	... 63 more
 </pre></div></td>
-<td>68</td>
-<td>Partnerspace.T69_bookmark_file_rightclick_delete@661c46bc</td></tr>
+<td>40</td>
+<td>sharespace.T63_bookmark_file_partnerspace@70e13fa</td></tr>
+<tr>
+<td title='sharespace.T48_recyclepin_folder_rightclick_restore.s1_recyclepin_restore()'><b>s1_recyclepin_restore</b><br>Test class: sharespace.T48_recyclepin_folder_rightclick_restore</td>
+<td><div><pre>java.lang.AssertionError: expected [file/folder restored successfully] but found [successfully restored from recycle bin.]
+	at sharespace.T48_recyclepin_folder_rightclick_restore.s1_recyclepin_restore(T48_recyclepin_folder_rightclick_restore.java:50)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace662032596", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace662032596'><pre>java.lang.AssertionError: expected [file/folder restored successfully] but found [successfully restored from recycle bin.]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at sharespace.T48_recyclepin_folder_rightclick_restore.s1_recyclepin_restore(T48_recyclepin_folder_rightclick_restore.java:50)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>15</td>
+<td>sharespace.T48_recyclepin_folder_rightclick_restore@2b917fb0</td></tr>
+<tr>
+<td title='sharespace.T57_bookmark_file_rightclick_sendto_sendtopartner.s1_bookmark_file_sendtopartner()'><b>s1_bookmark_file_sendtopartner</b><br>Test class: sharespace.T57_bookmark_file_rightclick_sendto_sendtopartner</td>
+<td><div><pre>java.lang.AssertionError: expected [file sharedto :partner space successfully.] but found []
+	at sharespace.T57_bookmark_file_rightclick_sendto_sendtopartner.s1_bookmark_file_sendtopartner(T57_bookmark_file_rightclick_sendto_sendtopartner.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1785954017", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1785954017'><pre>java.lang.AssertionError: expected [file sharedto :partner space successfully.] but found []
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at sharespace.T57_bookmark_file_rightclick_sendto_sendtopartner.s1_bookmark_file_sendtopartner(T57_bookmark_file_rightclick_sendto_sendtopartner.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>13</td>
+<td>sharespace.T57_bookmark_file_rightclick_sendto_sendtopartner@629adce</td></tr>
+<tr>
+<td title='sharespace.T23_files_rightclick_sendto_sendtoproject.s1_sendto_project()'><b>s1_sendto_project</b><br>Test class: sharespace.T23_files_rightclick_sendto_sendtoproject</td>
+<td><div><pre>java.lang.AssertionError: expected [file sharedto :project successfully.] but found [file sharedto :partner space successfully]
+	at sharespace.T23_files_rightclick_sendto_sendtoproject.s1_sendto_project(T23_files_rightclick_sendto_sendtoproject.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2035929450", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2035929450'><pre>java.lang.AssertionError: expected [file sharedto :project successfully.] but found [file sharedto :partner space successfully]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at sharespace.T23_files_rightclick_sendto_sendtoproject.s1_sendto_project(T23_files_rightclick_sendto_sendtoproject.java:61)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>13</td>
+<td>sharespace.T23_files_rightclick_sendto_sendtoproject@573284a5</td></tr>
+<tr>
+<td title='sharespace.T26_file_rightclick_move.s1_move_onfile()'><b>s1_move_onfile</b><br>Test class: sharespace.T26_file_rightclick_move</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#createfolder_name_txt&quot;}
+  (Session info: chrome=120.0.6099.109)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-138-generic&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c601f9cea925ebafb659bdaf00490a10, findElement {using=id, value=createfolder_name_txt}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37657}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37657/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c601f9cea925ebafb659bdaf00490a10
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+	at sharespace.T26_file_rightclick_move.s1_move_onfile(T26_file_rightclick_move.java:48)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace727263324", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace727263324'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#createfolder_name_txt&quot;}
+  (Session info: chrome=120.0.6099.109)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.8.1&apos;, revision: &apos;8ebccac989&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-138-generic&apos;, java.version: &apos;17.0.5&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c601f9cea925ebafb659bdaf00490a10, findElement {using=id, value=createfolder_name_txt}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 120.0.6099.109, chrome: {chromedriverVersion: 120.0.6099.109 (3419140ab66..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:37657}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: LINUX, proxy: Proxy(), se:cdp: ws://localhost:37657/devtoo..., se:cdpVersion: 120.0.6099.109, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c601f9cea925ebafb659bdaf00490a10
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at jdk.proxy2/jdk.proxy2.$Proxy18.sendKeys(Unknown Source)
+	at sharespace.T26_file_rightclick_move.s1_move_onfile(T26_file_rightclick_move.java:48)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>660</td>
+<td>sharespace.T26_file_rightclick_move@4bafe935</td></tr>
+<tr>
+<td title='sharespace.T58_bookmark_file_rightclick_rename.s1_bookmark_file_rename()'><b>s1_bookmark_file_rename</b><br>Test class: sharespace.T58_bookmark_file_rightclick_rename</td>
+<td><div><pre>java.lang.AssertionError: expected [file is renamed successfully.] but found [file is renamed successfully]
+	at sharespace.T58_bookmark_file_rightclick_rename.s1_bookmark_file_rename(T58_bookmark_file_rightclick_rename.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1823044527", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1823044527'><pre>java.lang.AssertionError: expected [file is renamed successfully.] but found [file is renamed successfully]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at sharespace.T58_bookmark_file_rightclick_rename.s1_bookmark_file_rename(T58_bookmark_file_rightclick_rename.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>12</td>
+<td>sharespace.T58_bookmark_file_rightclick_rename@6a282fdd</td></tr>
+<tr>
+<td title='sharespace.T56_bookmark_file_rightclick_sendto_sendtoproject.s1_bookmark_file_sendtoproject()'><b>s1_bookmark_file_sendtoproject</b><br>Test class: sharespace.T56_bookmark_file_rightclick_sendto_sendtoproject</td>
+<td><div><pre>java.lang.AssertionError: expected [file sharedto :project successfully.] but found [server encountered an error and was unable to complete your request.]
+	at sharespace.T56_bookmark_file_rightclick_sendto_sendtoproject.s1_bookmark_file_sendtoproject(T56_bookmark_file_rightclick_sendto_sendtoproject.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace181272378", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace181272378'><pre>java.lang.AssertionError: expected [file sharedto :project successfully.] but found [server encountered an error and was unable to complete your request.]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at sharespace.T56_bookmark_file_rightclick_sendto_sendtoproject.s1_bookmark_file_sendtoproject(T56_bookmark_file_rightclick_sendto_sendtoproject.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>14</td>
+<td>sharespace.T56_bookmark_file_rightclick_sendto_sendtoproject@30669dac</td></tr>
+<tr>
+<td title='sharespace.T24_files_rightclick_sendto_sendtopartner.s1_sendto_partner()'><b>s1_sendto_partner</b><br>Test class: sharespace.T24_files_rightclick_sendto_sendtopartner</td>
+<td><div><pre>java.lang.AssertionError: expected [file sharedto :partner space successfully.] but found [file sharedto :partner space successfully]
+	at sharespace.T24_files_rightclick_sendto_sendtopartner.s1_sendto_partner(T24_files_rightclick_sendto_sendtopartner.java:63)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1054078762", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1054078762'><pre>java.lang.AssertionError: expected [file sharedto :partner space successfully.] but found [file sharedto :partner space successfully]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at sharespace.T24_files_rightclick_sendto_sendtopartner.s1_sendto_partner(T24_files_rightclick_sendto_sendtopartner.java:63)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>15</td>
+<td>sharespace.T24_files_rightclick_sendto_sendtopartner@3fbfbf84</td></tr>
+<tr>
+<td title='sharespace.T25_file_rightclick_rename.s1_rename_onfile()'><b>s1_rename_onfile</b><br>Test class: sharespace.T25_file_rightclick_rename</td>
+<td><div><pre>java.lang.AssertionError: expected [file is renamed successfully.] but found [file is renamed successfully]
+	at sharespace.T25_file_rightclick_rename.s1_rename_onfile(T25_file_rightclick_rename.java:83)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1819049701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1819049701'><pre>java.lang.AssertionError: expected [file is renamed successfully.] but found [file is renamed successfully]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at sharespace.T25_file_rightclick_rename.s1_rename_onfile(T25_file_rightclick_rename.java:83)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>21</td>
+<td>sharespace.T25_file_rightclick_rename@23f72d88</td></tr>
+<tr>
+<td title='sharespace.T54_bookmark_file_rightclick_sendto_sendtomyfile.s1_bookmark_file_sendtomyfile()'><b>s1_bookmark_file_sendtomyfile</b><br>Test class: sharespace.T54_bookmark_file_rightclick_sendto_sendtomyfile</td>
+<td><div><pre>java.lang.AssertionError: expected [file sharedto :myfiles successfully.] but found [server encountered an error and was unable to complete your request.]
+	at sharespace.T54_bookmark_file_rightclick_sendto_sendtomyfile.s1_bookmark_file_sendtomyfile(T54_bookmark_file_rightclick_sendto_sendtomyfile.java:62)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace606434255", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace606434255'><pre>java.lang.AssertionError: expected [file sharedto :myfiles successfully.] but found [server encountered an error and was unable to complete your request.]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at sharespace.T54_bookmark_file_rightclick_sendto_sendtomyfile.s1_bookmark_file_sendtomyfile(T54_bookmark_file_rightclick_sendto_sendtomyfile.java:62)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>14</td>
+<td>sharespace.T54_bookmark_file_rightclick_sendto_sendtomyfile@422b8438</td></tr>
+<tr>
+<td title='sharespace.T60_bookmark_file_rightclick_copy.s1_bookmark_file_copy()'><b>s1_bookmark_file_copy</b><br>Test class: sharespace.T60_bookmark_file_rightclick_copy</td>
+<td><div><pre>java.lang.AssertionError: expected [file(s) copied successfully] but found [server encountered an error and was unable to complete your request.]
+	at sharespace.T60_bookmark_file_rightclick_copy.s1_bookmark_file_copy(T60_bookmark_file_rightclick_copy.java:60)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 33 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace642187501", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace642187501'><pre>java.lang.AssertionError: expected [file(s) copied successfully] but found [server encountered an error and was unable to complete your request.]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at sharespace.T60_bookmark_file_rightclick_copy.s1_bookmark_file_copy(T60_bookmark_file_rightclick_copy.java:60)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>12</td>
+<td>sharespace.T60_bookmark_file_rightclick_copy@70331432</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -195,265 +772,245 @@ Session ID: e7a840e8060c57dd102befa16dd1748a
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Partnerspace.T26_file_rightclick_rename.s1_rename_onfile()'><b>s1_rename_onfile</b><br>Test class: Partnerspace.T26_file_rightclick_rename</td>
-<td></td>
-<td>20</td>
-<td>Partnerspace.T26_file_rightclick_rename@6145b81e</td></tr>
-<tr>
-<td title='Partnerspace.T40_sharelist_quickfilter.s1_sharelist_quickfilter()'><b>s1_sharelist_quickfilter</b><br>Test class: Partnerspace.T40_sharelist_quickfilter</td>
-<td></td>
-<td>15</td>
-<td>Partnerspace.T40_sharelist_quickfilter@3b46dd8</td></tr>
-<tr>
-<td title='Partnerspace.T17_file_rightclick_preview.s1_preview_onfile()'><b>s1_preview_onfile</b><br>Test class: Partnerspace.T17_file_rightclick_preview</td>
-<td></td>
-<td>15</td>
-<td>Partnerspace.T17_file_rightclick_preview@2875b016</td></tr>
-<tr>
-<td title='Partnerspace.T9_folder_rightclick_createfolder.s1_createfolder_onfolderdropdown()'><b>s1_createfolder_onfolderdropdown</b><br>Test class: Partnerspace.T9_folder_rightclick_createfolder</td>
+<td title='sharespace.T45_bookmark_folder_rightclick_delete.s1_deletefolder_onbookmark()'><b>s1_deletefolder_onbookmark</b><br>Test class: sharespace.T45_bookmark_folder_rightclick_delete</td>
 <td></td>
 <td>11</td>
-<td>Partnerspace.T9_folder_rightclick_createfolder@1706a5c9</td></tr>
+<td>sharespace.T45_bookmark_folder_rightclick_delete@1de9d54</td></tr>
 <tr>
-<td title='Partnerspace.T72_members_group_delete.s1_members_group_searchanddelete()'><b>s1_members_group_searchanddelete</b><br>Test class: Partnerspace.T72_members_group_delete</td>
-<td></td>
-<td>14</td>
-<td>Partnerspace.T72_members_group_delete@2b98b3bb</td></tr>
-<tr>
-<td title='Partnerspace.T2_create_project.s1_createproject()'><b>s1_createproject</b><br>Test class: Partnerspace.T2_create_project</td>
-<td></td>
-<td>15</td>
-<td>Partnerspace.T2_create_project@4d96250</td></tr>
-<tr>
-<td title='Partnerspace.T47_bookmark_folder_rightclick_delete.s1_deletefolder_onbookmark()'><b>s1_deletefolder_onbookmark</b><br>Test class: Partnerspace.T47_bookmark_folder_rightclick_delete</td>
-<td></td>
-<td>10</td>
-<td>Partnerspace.T47_bookmark_folder_rightclick_delete@6da9dc6</td></tr>
-<tr>
-<td title='Partnerspace.T5_uploadfile_using_uploadbutton_ontoprightcorner.s1_uploadfile_onuploadbutton()'><b>s1_uploadfile_onuploadbutton</b><br>Test class: Partnerspace.T5_uploadfile_using_uploadbutton_ontoprightcorner</td>
-<td></td>
-<td>10</td>
-<td>Partnerspace.T5_uploadfile_using_uploadbutton_ontoprightcorner@7a93b263</td></tr>
-<tr>
-<td title='Partnerspace.T43_bookmark_folder_rightclick_createfolder.s1_bookmark_createfolder()'><b>s1_bookmark_createfolder</b><br>Test class: Partnerspace.T43_bookmark_folder_rightclick_createfolder</td>
-<td></td>
-<td>10</td>
-<td>Partnerspace.T43_bookmark_folder_rightclick_createfolder@134c370e</td></tr>
-<tr>
-<td title='Partnerspace.T30_file_rightclick_lock.s1_checklock_unlock_onfile()'><b>s1_checklock_unlock_onfile</b><br>Test class: Partnerspace.T30_file_rightclick_lock</td>
-<td></td>
-<td>18</td>
-<td>Partnerspace.T30_file_rightclick_lock@7f92b990</td></tr>
-<tr>
-<td title='Partnerspace.T44_bookmark_folder_rightclick_download.s1_bookmark_download()'><b>s1_bookmark_download</b><br>Test class: Partnerspace.T44_bookmark_folder_rightclick_download</td>
-<td></td>
-<td>10</td>
-<td>Partnerspace.T44_bookmark_folder_rightclick_download@33364212</td></tr>
-<tr>
-<td title='Partnerspace.T3_projectname_search.s1_check_projectsearch()'><b>s1_check_projectsearch</b><br>Test class: Partnerspace.T3_projectname_search</td>
-<td></td>
-<td>10</td>
-<td>Partnerspace.T3_projectname_search@9a6fbc0</td></tr>
-<tr>
-<td title='Partnerspace.T56_bookmark_file_rightclick_details.s1_bookmark_file_details()'><b>s1_bookmark_file_details</b><br>Test class: Partnerspace.T56_bookmark_file_rightclick_details</td>
-<td></td>
-<td>9</td>
-<td>Partnerspace.T56_bookmark_file_rightclick_details@455824ad</td></tr>
-<tr>
-<td title='Partnerspace.T37_sharelist_folder_rightclick_linkdetails.s1_sharelist_linkdetails_onfolder()'><b>s1_sharelist_linkdetails_onfolder</b><br>Test class: Partnerspace.T37_sharelist_folder_rightclick_linkdetails</td>
-<td></td>
-<td>10</td>
-<td>Partnerspace.T37_sharelist_folder_rightclick_linkdetails@6e8a9c30</td></tr>
-<tr>
-<td title='Partnerspace.T64_bookmark_file_rightclick_rename.s1_bookmark_file_rename()'><b>s1_bookmark_file_rename</b><br>Test class: Partnerspace.T64_bookmark_file_rightclick_rename</td>
-<td></td>
-<td>8</td>
-<td>Partnerspace.T64_bookmark_file_rightclick_rename@70f31322</td></tr>
-<tr>
-<td title='Partnerspace.T51_recyclepin_folder_rightclick_delete.s1_recyclepin_delete()'><b>s1_recyclepin_delete</b><br>Test class: Partnerspace.T51_recyclepin_folder_rightclick_delete</td>
-<td></td>
-<td>10</td>
-<td>Partnerspace.T51_recyclepin_folder_rightclick_delete@7c84195</td></tr>
-<tr>
-<td title='Partnerspace.T67_bookmark_file_rightclick_checkout.s1_bookmark_file_checkoutandundocheckout()'><b>s1_bookmark_file_checkoutandundocheckout</b><br>Test class: Partnerspace.T67_bookmark_file_rightclick_checkout</td>
-<td></td>
-<td>17</td>
-<td>Partnerspace.T67_bookmark_file_rightclick_checkout@e1e2e5e</td></tr>
-<tr>
-<td title='Partnerspace.T29_file_rightclick_checkout.s1_checkout_onfile()'><b>s1_checkout_onfile</b><br>Test class: Partnerspace.T29_file_rightclick_checkout</td>
+<td title='sharespace.T11_folder_rightclick_delete.s1_deletedropdown_onfolder()'><b>s1_deletedropdown_onfolder</b><br>Test class: sharespace.T11_folder_rightclick_delete</td>
 <td></td>
 <td>19</td>
-<td>Partnerspace.T29_file_rightclick_checkout@33db72bd</td></tr>
+<td>sharespace.T11_folder_rightclick_delete@2b98b3bb</td></tr>
 <tr>
-<td title='Partnerspace.T52_member_Adduser.s1_Adduser_inmember()'><b>s1_Adduser_inmember</b><br>Test class: Partnerspace.T52_member_Adduser</td>
-<td></td>
-<td>15</td>
-<td>Partnerspace.T52_member_Adduser@552ed807</td></tr>
-<tr>
-<td title='Partnerspace.T54_member_addpartner.s1_addpartner_member()'><b>s1_addpartner_member</b><br>Test class: Partnerspace.T54_member_addpartner</td>
-<td></td>
-<td>13</td>
-<td>Partnerspace.T54_member_addpartner@23940f86</td></tr>
-<tr>
-<td title='Partnerspace.T16_folder_rightclick_folderactivitylog_clickclear_verify_checkbox_isenable.s1_activitylog_clickclear_verify_checkbox_isenable()'><b>s1_activitylog_clickclear_verify_checkbox_isenable</b><br>Test class: Partnerspace.T16_folder_rightclick_folderactivitylog_clickclear_verify_checkbox_isenable</td>
-<td></td>
-<td>11</td>
-<td>Partnerspace.T16_folder_rightclick_folderactivitylog_clickclear_verify_checkbox_isenable@681e144</td></tr>
-<tr>
-<td title='Partnerspace.T27_file_rightclick_move.s1_move_onfile()'><b>s1_move_onfile</b><br>Test class: Partnerspace.T27_file_rightclick_move</td>
-<td></td>
-<td>21</td>
-<td>Partnerspace.T27_file_rightclick_move@64355120</td></tr>
-<tr>
-<td title='Partnerspace.T45_bookmark_folder_rightclick_rename.s1_rename_onbookmark()'><b>s1_rename_onbookmark</b><br>Test class: Partnerspace.T45_bookmark_folder_rightclick_rename</td>
-<td></td>
-<td>11</td>
-<td>Partnerspace.T45_bookmark_folder_rightclick_rename@2216effc</td></tr>
-<tr>
-<td title='Partnerspace.T13_folder_rightclick_delete.s1_deletefolder_onfolderdropdown()'><b>s1_deletefolder_onfolderdropdown</b><br>Test class: Partnerspace.T13_folder_rightclick_delete</td>
-<td></td>
-<td>20</td>
-<td>Partnerspace.T13_folder_rightclick_delete@1a480135</td></tr>
-<tr>
-<td title='Partnerspace.T18_file_rightclick_details.s1_details_onfile()'><b>s1_details_onfile</b><br>Test class: Partnerspace.T18_file_rightclick_details</td>
-<td></td>
-<td>13</td>
-<td>Partnerspace.T18_file_rightclick_details@72ee5d84</td></tr>
-<tr>
-<td title='Partnerspace.T31_file_rightclick_delete.s1_delete_onfile()'><b>s1_delete_onfile</b><br>Test class: Partnerspace.T31_file_rightclick_delete</td>
+<td title='sharespace.T12_folder_rightclick_share.s1_share_usingdropdown_onfolder()'><b>s1_share_usingdropdown_onfolder</b><br>Test class: sharespace.T12_folder_rightclick_share</td>
 <td></td>
 <td>22</td>
-<td>Partnerspace.T31_file_rightclick_delete@31e04b13</td></tr>
+<td>sharespace.T12_folder_rightclick_share@540b0448</td></tr>
 <tr>
-<td title='Partnerspace.T50_recyclepin_folder_rightclick_restore.s1_recyclepin_restore()'><b>s1_recyclepin_restore</b><br>Test class: Partnerspace.T50_recyclepin_folder_rightclick_restore</td>
+<td title='sharespace.T49_recyclepin_folder_rightclick_delete.s1_recyclepin_delete()'><b>s1_recyclepin_delete</b><br>Test class: sharespace.T49_recyclepin_folder_rightclick_delete</td>
+<td></td>
+<td>11</td>
+<td>sharespace.T49_recyclepin_folder_rightclick_delete@5e5073ab</td></tr>
+<tr>
+<td title='sharespace.T52_bookmark_file_rightclick_download.s1_bookmark_file_download()'><b>s1_bookmark_file_download</b><br>Test class: sharespace.T52_bookmark_file_rightclick_download</td>
+<td></td>
+<td>11</td>
+<td>sharespace.T52_bookmark_file_rightclick_download@30c0d731</td></tr>
+<tr>
+<td title='sharespace.T31_file_rightclick_activitylog_clickclear_verifyactionbutton_isdisenable.s1_activitylog_clickclear_verifyactionbutton_isdisenable()'><b>s1_activitylog_clickclear_verifyactionbutton_isdisenable</b><br>Test class: sharespace.T31_file_rightclick_activitylog_clickclear_verifyactionbutton_isdisenable</td>
 <td></td>
 <td>13</td>
-<td>Partnerspace.T50_recyclepin_folder_rightclick_restore@12010fd1</td></tr>
+<td>sharespace.T31_file_rightclick_activitylog_clickclear_verifyactionbutton_isdisenable@365a6a43</td></tr>
 <tr>
-<td title='Partnerspace.T42_bookmark_folder_rightclick_uploadfile.s1_bookmark_uploadfile()'><b>s1_bookmark_uploadfile</b><br>Test class: Partnerspace.T42_bookmark_folder_rightclick_uploadfile</td>
+<td title='sharespace.T37_sharelist_folder_rightclick_gotolocation.s1_sharelist_gotolocation()'><b>s1_sharelist_gotolocation</b><br>Test class: sharespace.T37_sharelist_folder_rightclick_gotolocation</td>
 <td></td>
-<td>11</td>
-<td>Partnerspace.T42_bookmark_folder_rightclick_uploadfile@6be7bf6d</td></tr>
+<td>12</td>
+<td>sharespace.T37_sharelist_folder_rightclick_gotolocation@6c796cc1</td></tr>
 <tr>
-<td title='Partnerspace.T12_folder_rightclick_move.s1_move_onfolderdropdown()'><b>s1_move_onfolderdropdown</b><br>Test class: Partnerspace.T12_folder_rightclick_move</td>
-<td></td>
-<td>21</td>
-<td>Partnerspace.T12_folder_rightclick_move@38c2c309</td></tr>
-<tr>
-<td title='Partnerspace.T8_folder_rightclick_uploadfile.s1_uploadfile_onfolderdropdown()'><b>s1_uploadfile_onfolderdropdown</b><br>Test class: Partnerspace.T8_folder_rightclick_uploadfile</td>
-<td></td>
-<td>10</td>
-<td>Partnerspace.T8_folder_rightclick_uploadfile@14dc3f89</td></tr>
-<tr>
-<td title='Partnerspace.T11_folder_rightclick_rename.s1_rename_onfolderdropdown()'><b>s1_rename_onfolderdropdown</b><br>Test class: Partnerspace.T11_folder_rightclick_rename</td>
-<td></td>
-<td>16</td>
-<td>Partnerspace.T11_folder_rightclick_rename@4d178d55</td></tr>
-<tr>
-<td title='Partnerspace.T66_bookmark_file_rightclick_copy.s1_bookmark_file_copy()'><b>s1_bookmark_file_copy</b><br>Test class: Partnerspace.T66_bookmark_file_rightclick_copy</td>
-<td></td>
-<td>11</td>
-<td>Partnerspace.T66_bookmark_file_rightclick_copy@3be4fcc0</td></tr>
-<tr>
-<td title='Partnerspace.T10_folder_rightclick_download.s1_download_onfolderdropdown()'><b>s1_download_onfolderdropdown</b><br>Test class: Partnerspace.T10_folder_rightclick_download</td>
-<td></td>
-<td>9</td>
-<td>Partnerspace.T10_folder_rightclick_download@64412d34</td></tr>
-<tr>
-<td title='Partnerspace.T55_bookmark_file_rightclick_preview.s1_bookmark_file_preview()'><b>s1_bookmark_file_preview</b><br>Test class: Partnerspace.T55_bookmark_file_rightclick_preview</td>
-<td></td>
-<td>11</td>
-<td>Partnerspace.T55_bookmark_file_rightclick_preview@66153688</td></tr>
-<tr>
-<td title='Partnerspace.T32_file_rightclick_fileactivitylog_verifiedcheckbox_isenable.s1_fileactivitylog_verifiedcheckbox_isenable()'><b>s1_fileactivitylog_verifiedcheckbox_isenable</b><br>Test class: Partnerspace.T32_file_rightclick_fileactivitylog_verifiedcheckbox_isenable</td>
+<td title='sharespace.T9_folder_rightclick_rename.s1_rename_dropdown_onfolder()'><b>s1_rename_dropdown_onfolder</b><br>Test class: sharespace.T9_folder_rightclick_rename</td>
 <td></td>
 <td>14</td>
-<td>Partnerspace.T32_file_rightclick_fileactivitylog_verifiedcheckbox_isenable@6c1832aa</td></tr>
+<td>sharespace.T9_folder_rightclick_rename@661c46bc</td></tr>
 <tr>
-<td title='Partnerspace.T57_bookmark_file_rightclick_download.s1_bookmark_file_download()'><b>s1_bookmark_file_download</b><br>Test class: Partnerspace.T57_bookmark_file_rightclick_download</td>
-<td></td>
-<td>9</td>
-<td>Partnerspace.T57_bookmark_file_rightclick_download@7318daf8</td></tr>
-<tr>
-<td title='Partnerspace.T28_file_rightclick_copy.s1_copy_onfile()'><b>s1_copy_onfile</b><br>Test class: Partnerspace.T28_file_rightclick_copy</td>
-<td></td>
-<td>15</td>
-<td>Partnerspace.T28_file_rightclick_copy@64b7225f</td></tr>
-<tr>
-<td title='Partnerspace.T33_file_rightclick_fileactivitylog_clear_verifitycheckbox_isenable.s1_fileactivitylog_clear_verifitycheckbox_isenable()'><b>s1_fileactivitylog_clear_verifitycheckbox_isenable</b><br>Test class: Partnerspace.T33_file_rightclick_fileactivitylog_clear_verifitycheckbox_isenable</td>
-<td></td>
-<td>17</td>
-<td>Partnerspace.T33_file_rightclick_fileactivitylog_clear_verifitycheckbox_isenable@4beeb0e</td></tr>
-<tr>
-<td title='Partnerspace.T49_create_sdnote.s1_create_sdnote()'><b>s1_create_sdnote</b><br>Test class: Partnerspace.T49_create_sdnote</td>
-<td></td>
-<td>10</td>
-<td>Partnerspace.T49_create_sdnote@7fd69dd</td></tr>
-<tr>
-<td title='Partnerspace.T39_sharelist_folder_rightclick_gotolocation.s1_sharelist_gotolocation()'><b>s1_sharelist_gotolocation</b><br>Test class: Partnerspace.T39_sharelist_folder_rightclick_gotolocation</td>
-<td></td>
-<td>9</td>
-<td>Partnerspace.T39_sharelist_folder_rightclick_gotolocation@70211e49</td></tr>
-<tr>
-<td title='Partnerspace.T65_bookmark_file_rightclick_move.s1_bookmark_file_move()'><b>s1_bookmark_file_move</b><br>Test class: Partnerspace.T65_bookmark_file_rightclick_move</td>
-<td></td>
-<td>11</td>
-<td>Partnerspace.T65_bookmark_file_rightclick_move@3f1ddac2</td></tr>
-<tr>
-<td title='Partnerspace.T38_sharelist_folder_rightclick_unshare.s1_sharelist_unshare()'><b>s1_sharelist_unshare</b><br>Test class: Partnerspace.T38_sharelist_folder_rightclick_unshare</td>
-<td></td>
-<td>9</td>
-<td>Partnerspace.T38_sharelist_folder_rightclick_unshare@5d01ea21</td></tr>
-<tr>
-<td title='Partnerspace.T15_folder_rightclick_folderactivitylog_verify_textbox_isenable.s1_folderactivitylog_verify_textbox_isenable()'><b>s1_folderactivitylog_verify_textbox_isenable</b><br>Test class: Partnerspace.T15_folder_rightclick_folderactivitylog_verify_textbox_isenable</td>
-<td></td>
-<td>12</td>
-<td>Partnerspace.T15_folder_rightclick_folderactivitylog_verify_textbox_isenable@778db7c5</td></tr>
-<tr>
-<td title='Partnerspace.T53_member_Addgroup.s1_Addgroup_inmember()'><b>s1_Addgroup_inmember</b><br>Test class: Partnerspace.T53_member_Addgroup</td>
-<td></td>
-<td>16</td>
-<td>Partnerspace.T53_member_Addgroup@3971f0fe</td></tr>
-<tr>
-<td title='Partnerspace.T4_createfolder_using_createbutton_ontoprightcorner.s1_createfolder()'><b>s1_createfolder</b><br>Test class: Partnerspace.T4_createfolder_using_createbutton_ontoprightcorner</td>
-<td></td>
-<td>11</td>
-<td>Partnerspace.T4_createfolder_using_createbutton_ontoprightcorner@c1fa7d4</td></tr>
-<tr>
-<td title='Partnerspace.T19_file_rightclick_download.s1_download_onfile()'><b>s1_download_onfile</b><br>Test class: Partnerspace.T19_file_rightclick_download</td>
-<td></td>
-<td>11</td>
-<td>Partnerspace.T19_file_rightclick_download@68c7ef83</td></tr>
-<tr>
-<td title='Partnerspace.T46_bookmark_folder_rightclick_move.s1_movefolder_onbookmark()'><b>s1_movefolder_onbookmark</b><br>Test class: Partnerspace.T46_bookmark_folder_rightclick_move</td>
-<td></td>
-<td>9</td>
-<td>Partnerspace.T46_bookmark_folder_rightclick_move@745c2004</td></tr>
-<tr>
-<td title='Partnerspace.T7_folder_rightclick_properties.s1_properties_onfolder()'><b>s1_properties_onfolder</b><br>Test class: Partnerspace.T7_folder_rightclick_properties</td>
-<td></td>
-<td>12</td>
-<td>Partnerspace.T7_folder_rightclick_properties@bd1111a</td></tr>
-<tr>
-<td title='Partnerspace.T41_sharelist_sortby.s1_sharelist_sortby()'><b>s1_sharelist_sortby</b><br>Test class: Partnerspace.T41_sharelist_sortby</td>
-<td></td>
-<td>17</td>
-<td>Partnerspace.T41_sharelist_sortby@39651a82</td></tr>
-<tr>
-<td title='Partnerspace.T6_upload_filewithmetadata_using_uploadbutton_ontoprightcorner.s1_uploadfile_onfilewithmetadata()'><b>s1_uploadfile_onfilewithmetadata</b><br>Test class: Partnerspace.T6_upload_filewithmetadata_using_uploadbutton_ontoprightcorner</td>
-<td></td>
-<td>10</td>
-<td>Partnerspace.T6_upload_filewithmetadata_using_uploadbutton_ontoprightcorner@35178483</td></tr>
-<tr>
-<td title='Partnerspace.T1_container_open.s1_partnerspace_verify_isopen()'><b>s1_partnerspace_verify_isopen</b><br>Test class: Partnerspace.T1_container_open</td>
-<td></td>
-<td>6</td>
-<td>Partnerspace.T1_container_open@506dcf55</td></tr>
-<tr>
-<td title='Partnerspace.T71_members_user_delete.s1_members_searchanddelete()'><b>s1_members_searchanddelete</b><br>Test class: Partnerspace.T71_members_user_delete</td>
+<td title='sharespace.T14_folder_rightclick_activitylog_clickclear_verifyactionbutton_isdisenable.s1_activitylog_clickclear_verifyactionbutton_isdisenable()'><b>s1_activitylog_clickclear_verifyactionbutton_isdisenable</b><br>Test class: sharespace.T14_folder_rightclick_activitylog_clickclear_verifyactionbutton_isdisenable</td>
 <td></td>
 <td>13</td>
-<td>Partnerspace.T71_members_user_delete@37864b77</td></tr>
+<td>sharespace.T14_folder_rightclick_activitylog_clickclear_verifyactionbutton_isdisenable@557eb543</td></tr>
+<tr>
+<td title='sharespace.T5_folder_rightclick_properties.s1_check_properties_onfolder()'><b>s1_check_properties_onfolder</b><br>Test class: sharespace.T5_folder_rightclick_properties</td>
+<td></td>
+<td>13</td>
+<td>sharespace.T5_folder_rightclick_properties@455824ad</td></tr>
+<tr>
+<td title='sharespace.T39_sharelist_sortby.s1_sharelist_sortby()'><b>s1_sharelist_sortby</b><br>Test class: sharespace.T39_sharelist_sortby</td>
+<td></td>
+<td>19</td>
+<td>sharespace.T39_sharelist_sortby@1cb7936c</td></tr>
+<tr>
+<td title='sharespace.T46_bookmark_folder_rightclick_share.s1_share_onbookmark()'><b>s1_share_onbookmark</b><br>Test class: sharespace.T46_bookmark_folder_rightclick_share</td>
+<td></td>
+<td>19</td>
+<td>sharespace.T46_bookmark_folder_rightclick_share@77a2aa4a</td></tr>
+<tr>
+<td title='sharespace.T47_create_sdnote_using_createbutton_toprightcorner.s1_create_sdnote()'><b>s1_create_sdnote</b><br>Test class: sharespace.T47_create_sdnote_using_createbutton_toprightcorner</td>
+<td></td>
+<td>14</td>
+<td>sharespace.T47_create_sdnote_using_createbutton_toprightcorner@47ad69f7</td></tr>
+<tr>
+<td title='sharespace.T19_file_rightclick_download.s1_verify_download_onfile()'><b>s1_verify_download_onfile</b><br>Test class: sharespace.T19_file_rightclick_download</td>
+<td></td>
+<td>15</td>
+<td>sharespace.T19_file_rightclick_download@6601cc93</td></tr>
+<tr>
+<td title='sharespace.T8_folder_rightclick_download.s1_download_dropdown_onfolders()'><b>s1_download_dropdown_onfolders</b><br>Test class: sharespace.T8_folder_rightclick_download</td>
+<td></td>
+<td>9</td>
+<td>sharespace.T8_folder_rightclick_download@e1e2e5e</td></tr>
+<tr>
+<td title='sharespace.T42_bookmark_folder_rightclick_download.s1_bookmark_download()'><b>s1_bookmark_download</b><br>Test class: sharespace.T42_bookmark_folder_rightclick_download</td>
+<td></td>
+<td>11</td>
+<td>sharespace.T42_bookmark_folder_rightclick_download@45667d98</td></tr>
+<tr>
+<td title='sharespace.T1_container_open.s1_Department_open()'><b>s1_Department_open</b><br>Test class: sharespace.T1_container_open</td>
+<td></td>
+<td>8</td>
+<td>sharespace.T1_container_open@134c370e</td></tr>
+<tr>
+<td title='sharespace.T3_uploadfile_using_uploadbutton_toprightcorner.s1_uploadfile_using_uploadbutton()'><b>s1_uploadfile_using_uploadbutton</b><br>Test class: sharespace.T3_uploadfile_using_uploadbutton_toprightcorner</td>
+<td></td>
+<td>12</td>
+<td>sharespace.T3_uploadfile_using_uploadbutton_toprightcorner@23940f86</td></tr>
+<tr>
+<td title='sharespace.T16_folder_rightclick_activitylog_verify_download.s1_activitylog_verify_download()'><b>s1_activitylog_verify_download</b><br>Test class: sharespace.T16_folder_rightclick_activitylog_verify_download</td>
+<td></td>
+<td>13</td>
+<td>sharespace.T16_folder_rightclick_activitylog_verify_download@3730ab42</td></tr>
+<tr>
+<td title='sharespace.T51_bookmark_file_rightclick_details.s1_bookmark_file_details()'><b>s1_bookmark_file_details</b><br>Test class: sharespace.T51_bookmark_file_rightclick_details</td>
+<td></td>
+<td>10</td>
+<td>sharespace.T51_bookmark_file_rightclick_details@100c567f</td></tr>
+<tr>
+<td title='sharespace.T35_sharelist_folder_rightclick_linkdetails.s1_sharelist_linkdetails_onfolder()'><b>s1_sharelist_linkdetails_onfolder</b><br>Test class: sharespace.T35_sharelist_folder_rightclick_linkdetails</td>
+<td></td>
+<td>11</td>
+<td>sharespace.T35_sharelist_folder_rightclick_linkdetails@23b3aa8c</td></tr>
+<tr>
+<td title='sharespace.T27_file_rightclick_copy.s1_copy_onfile()'><b>s1_copy_onfile</b><br>Test class: sharespace.T27_file_rightclick_copy</td>
+<td></td>
+<td>14</td>
+<td>sharespace.T27_file_rightclick_copy@87b5b49</td></tr>
+<tr>
+<td title='sharespace.T36_sharelist_folder_rightclick_unshare.s1_sharelist_unshare()'><b>s1_sharelist_unshare</b><br>Test class: sharespace.T36_sharelist_folder_rightclick_unshare</td>
+<td></td>
+<td>11</td>
+<td>sharespace.T36_sharelist_folder_rightclick_unshare@99407c2</td></tr>
+<tr>
+<td title='sharespace.T62_bookmark_file_rightclick_createremainder.s1_sharewithme_openlink()'><b>s1_sharewithme_openlink</b><br>Test class: sharespace.T62_bookmark_file_rightclick_createremainder</td>
+<td></td>
+<td>14</td>
+<td>sharespace.T62_bookmark_file_rightclick_createremainder@10c2064a</td></tr>
+<tr>
+<td title='sharespace.T29_file_rightclick_lock.s1_lock_unlock_onfile()'><b>s1_lock_unlock_onfile</b><br>Test class: sharespace.T29_file_rightclick_lock</td>
+<td></td>
+<td>18</td>
+<td>sharespace.T29_file_rightclick_lock@507b79f7</td></tr>
+<tr>
+<td title='sharespace.T13_folder_rightclick_folderactivitylog_open_verifyactionbutton_isenable.s1_folderactivitylog_open_verifyactionbutton_isenable()'><b>s1_folderactivitylog_open_verifyactionbutton_isenable</b><br>Test class: sharespace.T13_folder_rightclick_folderactivitylog_open_verifyactionbutton_isenable</td>
+<td></td>
+<td>12</td>
+<td>sharespace.T13_folder_rightclick_folderactivitylog_open_verifyactionbutton_isenable@50a691d3</td></tr>
+<tr>
+<td title='sharespace.T41_bookmark_folder_rightclick_createfolder.s1_bookmark_createfolder()'><b>s1_bookmark_createfolder</b><br>Test class: sharespace.T41_bookmark_folder_rightclick_createfolder</td>
+<td></td>
+<td>13</td>
+<td>sharespace.T41_bookmark_folder_rightclick_createfolder@128c502c</td></tr>
+<tr>
+<td title='sharespace.T21_files_rightclick_sendto_sendtomyfiles.s1_sendto_myfiles()'><b>s1_sendto_myfiles</b><br>Test class: sharespace.T21_files_rightclick_sendto_sendtomyfiles</td>
+<td></td>
+<td>14</td>
+<td>sharespace.T21_files_rightclick_sendto_sendtomyfiles@63716833</td></tr>
+<tr>
+<td title='sharespace.T17_file_rightclick_preview.s1_verifypreview_infile()'><b>s1_verifypreview_infile</b><br>Test class: sharespace.T17_file_rightclick_preview</td>
+<td></td>
+<td>20</td>
+<td>sharespace.T17_file_rightclick_preview@537c8c7e</td></tr>
+<tr>
+<td title='sharespace.T59_bookmark_file_rightclick_move.s1_bookmark_file_move()'><b>s1_bookmark_file_move</b><br>Test class: sharespace.T59_bookmark_file_rightclick_move</td>
+<td></td>
+<td>14</td>
+<td>sharespace.T59_bookmark_file_rightclick_move@743c6ce4</td></tr>
+<tr>
+<td title='sharespace.T44_bookmark_folder_rightclick_move.s1_movefolder_onbookmark()'><b>s1_movefolder_onbookmark</b><br>Test class: sharespace.T44_bookmark_folder_rightclick_move</td>
+<td></td>
+<td>13</td>
+<td>sharespace.T44_bookmark_folder_rightclick_move@7123be6c</td></tr>
+<tr>
+<td title='sharespace.T43_bookmark_folder_rightclick_rename.s1_rename_onbookmark()'><b>s1_rename_onbookmark</b><br>Test class: sharespace.T43_bookmark_folder_rightclick_rename</td>
+<td></td>
+<td>11</td>
+<td>sharespace.T43_bookmark_folder_rightclick_rename@65eabaab</td></tr>
+<tr>
+<td title='sharespace.T4_upload_filemetadata_using_uploadbutton_toprightcorner.s1_uploadfilemetadata_usinguploadbutton()'><b>s1_uploadfilemetadata_usinguploadbutton</b><br>Test class: sharespace.T4_upload_filemetadata_using_uploadbutton_toprightcorner</td>
+<td></td>
+<td>12</td>
+<td>sharespace.T4_upload_filemetadata_using_uploadbutton_toprightcorner@66153688</td></tr>
+<tr>
+<td title='sharespace.T53_bookmark_file_rightclick_share.s1_bookmark_file_share()'><b>s1_bookmark_file_share</b><br>Test class: sharespace.T53_bookmark_file_rightclick_share</td>
+<td></td>
+<td>19</td>
+<td>sharespace.T53_bookmark_file_rightclick_share@6d5037a9</td></tr>
+<tr>
+<td title='sharespace.T30_file_rightclick_activitylog_checkbox_isenable_onfile.s1_activitylog_checkbox_isenable_onfile()'><b>s1_activitylog_checkbox_isenable_onfile</b><br>Test class: sharespace.T30_file_rightclick_activitylog_checkbox_isenable_onfile</td>
+<td></td>
+<td>12</td>
+<td>sharespace.T30_file_rightclick_activitylog_checkbox_isenable_onfile@64a9d48c</td></tr>
+<tr>
+<td title='sharespace.T40_bookmark_folder_rightclick_uploadfile.s1_bookmark_uploadfile()'><b>s1_bookmark_uploadfile</b><br>Test class: sharespace.T40_bookmark_folder_rightclick_uploadfile</td>
+<td></td>
+<td>12</td>
+<td>sharespace.T40_bookmark_folder_rightclick_uploadfile@35342d2f</td></tr>
+<tr>
+<td title='sharespace.T15_folder_rightclick_folderactivitylog_clickactionbutton_verifydetails_isdisplayed.s1_clickactionbutton_verifydetails_isdisplayed()'><b>s1_clickactionbutton_verifydetails_isdisplayed</b><br>Test class: sharespace.T15_folder_rightclick_folderactivitylog_clickactionbutton_verifydetails_isdisplayed</td>
+<td></td>
+<td>16</td>
+<td>sharespace.T15_folder_rightclick_folderactivitylog_clickactionbutton_verifydetails_isdisplayed@3b95d13c</td></tr>
+<tr>
+<td title='sharespace.T10_folder_rightclick_move.s1_move_dropdown_onfolder()'><b>s1_move_dropdown_onfolder</b><br>Test class: sharespace.T10_folder_rightclick_move</td>
+<td></td>
+<td>18</td>
+<td>sharespace.T10_folder_rightclick_move@37864b77</td></tr>
+<tr>
+<td title='sharespace.T50_bookmark_file_rightclick_preview.s1_bookmark_file_preview()'><b>s1_bookmark_file_preview</b><br>Test class: sharespace.T50_bookmark_file_rightclick_preview</td>
+<td></td>
+<td>14</td>
+<td>sharespace.T50_bookmark_file_rightclick_preview@3c4262d1</td></tr>
+<tr>
+<td title='sharespace.T18_file_rightclick_details.s1_verify_details_infile()'><b>s1_verify_details_infile</b><br>Test class: sharespace.T18_file_rightclick_details</td>
+<td></td>
+<td>14</td>
+<td>sharespace.T18_file_rightclick_details@7308ffff</td></tr>
+<tr>
+<td title='sharespace.T32_file_rightclick_createremainder.s1_createremainder_onfile()'><b>s1_createremainder_onfile</b><br>Test class: sharespace.T32_file_rightclick_createremainder</td>
+<td></td>
+<td>15</td>
+<td>sharespace.T32_file_rightclick_createremainder@288cdaab</td></tr>
+<tr>
+<td title='sharespace.T7_folder_rightclick_createfolder.s1_createfolder_usingdropdown_onfolder()'><b>s1_createfolder_usingdropdown_onfolder</b><br>Test class: sharespace.T7_folder_rightclick_createfolder</td>
+<td></td>
+<td>12</td>
+<td>sharespace.T7_folder_rightclick_createfolder@70f31322</td></tr>
+<tr>
+<td title='sharespace.T38_sharelist_quickfilter.s1_sharelist_quickfilter()'><b>s1_sharelist_quickfilter</b><br>Test class: sharespace.T38_sharelist_quickfilter</td>
+<td></td>
+<td>17</td>
+<td>sharespace.T38_sharelist_quickfilter@226eba67</td></tr>
+<tr>
+<td title='sharespace.T28_file_rightclick_delete.s1_delete_onfile()'><b>s1_delete_onfile</b><br>Test class: sharespace.T28_file_rightclick_delete</td>
+<td></td>
+<td>20</td>
+<td>sharespace.T28_file_rightclick_delete@4a7a965d</td></tr>
+<tr>
+<td title='sharespace.T6_folder_rightclick_uploadfile.s1_uploadfile_usingdropdown_folder()'><b>s1_uploadfile_usingdropdown_folder</b><br>Test class: sharespace.T6_folder_rightclick_uploadfile</td>
+<td></td>
+<td>11</td>
+<td>sharespace.T6_folder_rightclick_uploadfile@7318daf8</td></tr>
+<tr>
+<td title='sharespace.T61_bookmark_file_rightclick_delete.s1_bookmark_file_delete()'><b>s1_bookmark_file_delete</b><br>Test class: sharespace.T61_bookmark_file_rightclick_delete</td>
+<td></td>
+<td>15</td>
+<td>sharespace.T61_bookmark_file_rightclick_delete@3bbf9027</td></tr>
+<tr>
+<td title='sharespace.T2_create_folder_using_createbutton_toprightcorner.s1_create_folder_using_createbutton()'><b>s1_create_folder_using_createbutton</b><br>Test class: sharespace.T2_create_folder_using_createbutton_toprightcorner</td>
+<td></td>
+<td>14</td>
+<td>sharespace.T2_create_folder_using_createbutton_toprightcorner@3971f0fe</td></tr>
+<tr>
+<td title='sharespace.T20_file_rightclick_share.s1_share_infile()'><b>s1_share_infile</b><br>Test class: sharespace.T20_file_rightclick_share</td>
+<td></td>
+<td>24</td>
+<td>sharespace.T20_file_rightclick_share@54d901aa</td></tr>
 </table><p>
 </body>
 </html>

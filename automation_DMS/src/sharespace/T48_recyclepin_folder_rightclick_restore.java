@@ -46,7 +46,7 @@ public class T48_recyclepin_folder_rightclick_restore extends common_function{
 		Thread.sleep(500);
 		String actualdata =sharespace_pages.actualelement.getText();
 		System.out.println(actualdata);
-		String expectedelement ="file/folder restored successfully";
+		String expectedelement ="successfully restored from recycle bin.";
 		Assert.assertEquals(actualdata.toLowerCase(), expectedelement.toLowerCase());
 }
 }

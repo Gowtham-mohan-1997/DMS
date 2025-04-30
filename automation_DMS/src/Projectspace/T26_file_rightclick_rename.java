@@ -64,7 +64,7 @@ public class T26_file_rightclick_rename extends common_function{
 		Thread.sleep(500);
 		Projectspace_pages.files.click();
 		Thread.sleep(500);
-		Projectspace_pages.fileupload.sendKeys("/home/gautham/Documents/11-801-24-06007.pdf");
+		Projectspace_pages.fileupload.sendKeys(properties.getProperty("filename"));
 		Thread.sleep(500);
 		Projectspace_pages.filesinpartnerspace.click();
 		Thread.sleep(500);

@@ -224,13 +224,13 @@ public class sharespace_pages {
 	@FindBy(xpath="//*[@id=\"share_sub_tree_tv_active\"]/ul/li[1]/div/span")
 	public static WebElement departmentfolder;
 
-	@FindBy(xpath="//*[@id=\"context-menu-grid\"]/li[7]/div/ul/li[3]/span")
+	@FindBy(xpath="//*[@id=\"context-menu-grid\"]/li[7]/div/ul/li[2]/span/span")
 	public static WebElement project;//project in sendto on file
 
 	@FindBy(xpath="//*[@id=\"share_sub_tree_tv_active\"]/ul/li[1]/div/span")
 	public static WebElement projectfolder; //select the folder inside the project in sendto onfile
 
-	@FindBy(xpath="//span[@class=\"k-link k-menu-link\" and text()=\"Send To Partner Project\"]")
+	@FindBy(xpath="//*[@id=\"context-menu-grid\"]/li[7]/div/ul/li[3]/span/span")
 	public static WebElement partnerproject;
 
 	@FindBy(xpath="//*[@id=\"share_sub_tree_tv_active\"]/ul/li[1]/div/span")

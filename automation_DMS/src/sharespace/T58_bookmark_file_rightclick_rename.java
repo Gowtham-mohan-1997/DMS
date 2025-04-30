@@ -57,7 +57,7 @@ public class T58_bookmark_file_rightclick_rename extends common_function{
 
 		Thread.sleep(1000);
 		String actualdata = sharespace_pages.actualelement.getText();
-		String expecteddata = "File is renamed Successfully.";
+		String expecteddata = "file is renamed successfully";
 		System.out.println(actualdata);
 		Assert.assertEquals(actualdata.toLowerCase(), expecteddata.toLowerCase());
 

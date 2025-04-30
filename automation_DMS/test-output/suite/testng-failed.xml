@@ -3,13 +3,83 @@
 <suite name="Failed suite [suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test1(failed)">
     <classes>
-      <class name="Partnerspace.T69_bookmark_file_rightclick_delete">
+      <class name="sharespace.T63_bookmark_file_partnerspace">
         <methods>
-          <include name="s1_bookmark_file_delete"/>
+          <include name="launchbrowser"/>
+          <include name="s1_bookmark_file_partnerspace"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- sharespace.T63_bookmark_file_partnerspace -->
+      <class name="sharespace.T48_recyclepin_folder_rightclick_restore">
+        <methods>
+          <include name="s1_recyclepin_restore"/>
           <include name="launchbrowser"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- Partnerspace.T69_bookmark_file_rightclick_delete -->
+      </class> <!-- sharespace.T48_recyclepin_folder_rightclick_restore -->
+      <class name="sharespace.T24_files_rightclick_sendto_sendtopartner">
+        <methods>
+          <include name="launchbrowser"/>
+          <include name="teardown"/>
+          <include name="s1_sendto_partner"/>
+        </methods>
+      </class> <!-- sharespace.T24_files_rightclick_sendto_sendtopartner -->
+      <class name="sharespace.T26_file_rightclick_move">
+        <methods>
+          <include name="launchbrowser"/>
+          <include name="teardown"/>
+          <include name="s1_move_onfile"/>
+        </methods>
+      </class> <!-- sharespace.T26_file_rightclick_move -->
+      <class name="sharespace.T58_bookmark_file_rightclick_rename">
+        <methods>
+          <include name="s1_bookmark_file_rename"/>
+          <include name="launchbrowser"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- sharespace.T58_bookmark_file_rightclick_rename -->
+      <class name="sharespace.T60_bookmark_file_rightclick_copy">
+        <methods>
+          <include name="s1_bookmark_file_copy"/>
+          <include name="launchbrowser"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- sharespace.T60_bookmark_file_rightclick_copy -->
+      <class name="sharespace.T54_bookmark_file_rightclick_sendto_sendtomyfile">
+        <methods>
+          <include name="s1_bookmark_file_sendtomyfile"/>
+          <include name="launchbrowser"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- sharespace.T54_bookmark_file_rightclick_sendto_sendtomyfile -->
+      <class name="sharespace.T57_bookmark_file_rightclick_sendto_sendtopartner">
+        <methods>
+          <include name="launchbrowser"/>
+          <include name="teardown"/>
+          <include name="s1_bookmark_file_sendtopartner"/>
+        </methods>
+      </class> <!-- sharespace.T57_bookmark_file_rightclick_sendto_sendtopartner -->
+      <class name="sharespace.T25_file_rightclick_rename">
+        <methods>
+          <include name="s1_rename_onfile"/>
+          <include name="launchbrowser"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- sharespace.T25_file_rightclick_rename -->
+      <class name="sharespace.T56_bookmark_file_rightclick_sendto_sendtoproject">
+        <methods>
+          <include name="s1_bookmark_file_sendtoproject"/>
+          <include name="launchbrowser"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- sharespace.T56_bookmark_file_rightclick_sendto_sendtoproject -->
+      <class name="sharespace.T23_files_rightclick_sendto_sendtoproject">
+        <methods>
+          <include name="launchbrowser"/>
+          <include name="teardown"/>
+          <include name="s1_sendto_project"/>
+        </methods>
+      </class> <!-- sharespace.T23_files_rightclick_sendto_sendtoproject -->
     </classes>
   </test> <!-- Test1(failed) -->
 </suite> <!-- Failed suite [suite] -->

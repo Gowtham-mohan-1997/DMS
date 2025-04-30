@@ -71,7 +71,7 @@ public class T11_folder_rightclick_rename extends common_function{
 		Thread.sleep(1000);
 		String actualdata=Projectspace_pages.actualelement.getText();
 		System.out.println(actualdata);
-		String expecteddata="Folder is renamed successfully.";
+		String expecteddata="Folder is renamed successfully";
 		Assert.assertEquals(actualdata.toLowerCase(), expecteddata.toLowerCase());
 
 		break;

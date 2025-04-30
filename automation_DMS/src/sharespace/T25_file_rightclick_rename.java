@@ -56,7 +56,7 @@ public class T25_file_rightclick_rename extends common_function{
 		Thread.sleep(500);
 		sharespace_pages.files.click();
 		Thread.sleep(500);
-		sharespace_pages.fileupload.sendKeys("/home/gautham/Documents/11-801-24-06007.pdf");
+		sharespace_pages.fileupload.sendKeys(properties.getProperty("filename"));
 		Thread.sleep(500);
 		sharespace_pages.filesindepartment.click();
 		Thread.sleep(500);
@@ -79,7 +79,7 @@ public class T25_file_rightclick_rename extends common_function{
 		Thread.sleep(500);
 		String actualdata =sharespace_pages.actualelement.getText();
 		System.out.println(actualdata);
-		String expecteddata ="file is renamed successfully.";
+		String expecteddata ="file is renamed successfully";
 		Assert.assertEquals(actualdata.toLowerCase(), expecteddata.toLowerCase());
 
 	}

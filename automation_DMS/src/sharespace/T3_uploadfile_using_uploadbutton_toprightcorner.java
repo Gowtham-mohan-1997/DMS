@@ -40,7 +40,7 @@ public class T3_uploadfile_using_uploadbutton_toprightcorner extends common_func
 				Thread.sleep(500);
 				sharespace_pages.files.click();
 				Thread.sleep(500);
-				sharespace_pages.fileupload.sendKeys("/home/gautham/Documents/11-801-24-06007.pdf");
+				sharespace_pages.fileupload.sendKeys(properties.getProperty("filename"));
 				Thread.sleep(500);
 				String actualdata = sharespace_pages.actualelement.getText();
 				System.out.println(actualdata);

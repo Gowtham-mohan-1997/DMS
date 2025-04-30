@@ -59,7 +59,7 @@ public class T24_files_rightclick_sendto_sendtopartner extends common_function{
 			Thread.sleep(1000);
 			String actualdata = sharespace_pages.actualelement.getText();
 			System.out.println(actualdata);
-			String expecteddata = "File sharedTo :Partner Space successfully.";
+			String expecteddata = "file sharedto :partner space successfully";
 			Assert.assertEquals(actualdata.toLowerCase(), expecteddata.toLowerCase());
 		}
 

@@ -59,7 +59,7 @@ public class T26_file_rightclick_move extends common_function{
 		Thread.sleep(500);
 		sharespace_pages.files.click();
 		Thread.sleep(500);
-		sharespace_pages.fileupload.sendKeys("/home/gautham/Documents/11-801-24-06007.pdf");
+		sharespace_pages.fileupload.sendKeys(properties.getProperty("filename"));
 		Thread.sleep(500);
 		sharespace_pages.filesindepartment.click();
 		Thread.sleep(500);
@@ -80,7 +80,7 @@ public class T26_file_rightclick_move extends common_function{
 		Thread.sleep(500);
 		String actualdata1 =sharespace_pages.actualelement.getText();
 		System.out.println(actualdata1);
-		String expecteddata1 ="1/1 file(s) uploaded successfully";
+		String expecteddata1 ="files/folder(s) moved successfully";
 		Assert.assertEquals(actualdata1.toLowerCase(), expecteddata1.toLowerCase());
 
 

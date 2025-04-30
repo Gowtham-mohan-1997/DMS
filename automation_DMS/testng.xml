@@ -2,7 +2,8 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="suite">
 	<test name="Test1">
-		<classes>
+				<classes>
+
 			<!-- <class name="myfile.T1_login_DMS"/>
 			<class name="myfile.T2_container_open" />
 			<class name="myfile.T3_create_folder_using_createbutton_toprightcorner" />
@@ -137,7 +138,7 @@
 			<class name="Department.T63_bookmark_file_rightclick_copy" />
 			<class name="Department.T64_bookmark_file_rightclick_delete" />
 			<class name="Department.T65_bookmark_file_rightclick_createremainder" />
-			<class name="Department.T66_member_delete" />
+			<class name="Department.T66_member_delete" /> -->
 			<class name="sharespace.T1_container_open" />
 			<class name="sharespace.T2_create_folder_using_createbutton_toprightcorner" />
 			<class name="sharespace.T3_uploadfile_using_uploadbutton_toprightcorner" />
@@ -159,7 +160,6 @@
 			<class name="sharespace.T19_file_rightclick_download" />
 			<class name="sharespace.T20_file_rightclick_share" />
 			<class name="sharespace.T21_files_rightclick_sendto_sendtomyfiles" />
-			<class name="sharespace.T22_files_rightclick_sendto_sendtodepartment" />
 			<class name="sharespace.T23_files_rightclick_sendto_sendtoproject" />
 			<class name="sharespace.T24_files_rightclick_sendto_sendtopartner" />
 			<class name="sharespace.T25_file_rightclick_rename" />
@@ -170,8 +170,6 @@
 			<class name="sharespace.T30_file_rightclick_activitylog_checkbox_isenable_onfile" />
 			<class name="sharespace.T31_file_rightclick_activitylog_clickclear_verifyactionbutton_isdisenable" />
 			<class name="sharespace.T32_file_rightclick_createremainder" />
-			<class name="sharespace.T33_quicksearch" />
-			<class name="sharespace.T34_advancesearch" />
 			<class name="sharespace.T35_sharelist_folder_rightclick_linkdetails" />
 			<class name="sharespace.T36_sharelist_folder_rightclick_unshare" />
 			<class name="sharespace.T37_sharelist_folder_rightclick_gotolocation" />
@@ -192,7 +190,6 @@
 			<class name="sharespace.T52_bookmark_file_rightclick_download" />
 			<class name="sharespace.T53_bookmark_file_rightclick_share" />
 			<class name="sharespace.T54_bookmark_file_rightclick_sendto_sendtomyfile" />
-			<class name="sharespace.T55_bookmark_file_rightclick_sendto_sendtodepartment" />
 			<class name="sharespace.T56_bookmark_file_rightclick_sendto_sendtoproject" />
 			<class name="sharespace.T57_bookmark_file_rightclick_sendto_sendtopartner" />
 			<class name="sharespace.T58_bookmark_file_rightclick_rename" />
@@ -200,8 +197,11 @@
 			<class name="sharespace.T60_bookmark_file_rightclick_copy" />
 			<class name="sharespace.T61_bookmark_file_rightclick_delete" />
 			<class name="sharespace.T62_bookmark_file_rightclick_createremainder" />
-			<class name="sharespace.T63_bookmark_file_partnerspace" /> -->
-			<class name="Projectspace.T1_container_open" />
+			<class name="sharespace.T63_bookmark_file_partnerspace" />  
+	<!--	
+	<class name="sharespace.T33_quicksearch" />
+			<class name="sharespace.T34_advancesearch" />
+		<class name="Projectspace.T1_container_open" />
 			<class name="Projectspace.T2_create_project" />
 			<class name="Projectspace.T3_project_search" />
 			<class name="Projectspace.T4_create_folder_using_createbutton_toprightcorner" />
@@ -235,8 +235,6 @@
 			<class name="Projectspace.T32_file_rightclick_fileactivitylog_verifiedcheckbox_isenable" />
 			<class name="Projectspace.T33_file_rightclick_fileactivitylog_clear_verifitycheckbox_isenable" />
 			<class name="Projectspace.T34_file_rightclick_createremainder" />
-			<class name="Projectspace.T35_quicksearch" />
-			<class name="Projectspace.T36_advancesearch" />
 			<class name="Projectspace.T37_sharelist_folder_rightclick_linkdetails" />
 			<class name="Projectspace.T38_sharelist_folder_rightclick_unshare" />
 			<class name="Projectspace.T39_sharelist_folder_rightclick_gotolocation" />
@@ -245,7 +243,6 @@
 			<class name="Projectspace.T42_bookmark_folder_rightclick_uploadfile" />
 			<class name="Projectspace.T43_bookmark_folder_rightclick_createfolder" />
 			<class name="Projectspace.T44_bookmark_folder_rightclick_download" />
-			<class name="Projectspace.T45_bookmark_folder_rightclick_rename" />
 			<class name="Projectspace.T46_bookmark_folder_rightclick_move" />
 			<class name="Projectspace.T47_bookmark_foleder_rightclick_delete" />
 			<class name="Projectspace.T48_bookmark_folder_rightclick_share" />
@@ -259,79 +256,18 @@
 			<class name="Projectspace.T59_bookmark_file_rightclick_sendto_sendtodepartment" />
 			<class name="Projectspace.T60_bookmark_file_rightclick_sendto_sendtoproject" />
 			<class name="Projectspace.T62_bookmark_file_rightclick_sendto_sendtosharespace" />
-			<class name="Projectspace.T64_bookmark_file_rightclick_move" />
 			<class name="Projectspace.T65_bookmark_file_rightclick_copy" />
 			<class name="Projectspace.T66_bookmark_file_rightclick_checkout" />
 			<class name="Projectspace.T67_bookmark_file_rightclick_lock" />
-			<class name="Projectspace.T69_bookmark_file_rightclick_createremainder" /> -->
-		<!--	
+			<class name="Projectspace.T69_bookmark_file_rightclick_createremainder" /> 
+						
+		<class name="Projectspace.T35_quicksearch" />
+			<class name="Projectspace.T36_advancesearch" />
 		<class name="Projectspace.T52_member_adduser" />
 			<class name="Projectspace.T53_member_addgroup" />
-		<class name="Projectspace.T70_members_user_delete" />
-			<class name="Projectspace.T71_members_group_delete" />
-			<class name="Testcase.sharespace.T1_sharespace_open" />
-			<class name="Testcase.sharespace.T2_create_folder_using_createbutton" />
-			<class name="Testcase.sharespace.T3_uploadfile_using_uploadbutton" />
-			<class name="Testcase.sharespace.T4_uploadfilemetadata_usinguploadbutton" />
-			<class name="Testcase.sharespace.T5_check_properties_onfolder" />
-			<class name="Testcase.sharespace.T6_uploadfile_usingdropdown_folder" />
-			<class name="Testcase.sharespace.T7_createfolder_usingdropdown_onfolder" />
-			<class name="Testcase.sharespace.T8_download_dropdown_onfolder" />
-			<class name="Testcase.sharespace.T9_rename_dropdown_onfolder" />
-			<class name="Testcase.sharespace.T10_move_dropdown_onfolder" />
-			<class name="Testcase.sharespace.T11_deletedropdown_onfolder" />
-			<class name="Testcase.sharespace.T12_share_usingdropdown_onfolder" />
-			<class name="Testcase.sharespace.T13_folderactivitylog_open_verifyactionbutton_isenable" />
-			<class name="Testcase.sharespace.T14_activitylog_clickclear_verifyactionbutton_isdisenable" />
-			<class name="Testcase.sharespace.T15_clickactionbutton_verifydetails_isdisplayed" />
-			<class name="Testcase.sharespace.T16_activitylog_verify_download" />
-			<class name="Testcase.sharespace.T17_verifypreview_infile" />
-			<class name="Testcase.sharespace.T18_verify_details_infile" />
-			<class name="Testcase.sharespace.T19_verify_download_onfile" />
-			<class name="Testcase.sharespace.T20_share_infile" />
-			<class name="Testcase.sharespace.T21_sendto_myfiles" />
-			<class name="Testcase.sharespace.T22_sendto_department" />
-			<class name="Testcase.sharespace.T23_sendto_project" />
-			<class name="Testcase.sharespace.T24_sendto_partner" />
-			<class name="Testcase.sharespace.T25_rename_onfile" />
-			<class name="Testcase.sharespace.T26_move_onfile" />
-			<class name="Testcase.sharespace.T27_copy_onfile" />
-			<class name="Testcase.sharespace.T28_delete_onfile" />
-			<class name="Testcase.sharespace.T29_lock_unlock_onfile" />
-			<class name="Testcase.sharespace.T30_activitylog_checkbox_isenable_onfile" />
-			<class name="Testcase.sharespace.T31_activitylog_clickclear_verifyactionbutton_isdisenable" />
-			<class name="Testcase.sharespace.T32_createremainder_onfile" />
-			<class name="Testcase.sharespace.T33_quicksearch" />
-			<class name="Testcase.sharespace.T34_advancesearch" />
-			<class name="Testcase.sharespace.T35_sharelist_linkdetails_onfolder" />
-			<class name="Testcase.sharespace.T36_sharelist_unshare" />
-			<class name="Testcase.sharespace.T37_sharelist_gotolocation" />
-			<class name="Testcase.sharespace.T38_sharelist_quickfilter" />
-			<class name="Testcase.sharespace.T39_sharelist_sortby" />
-			<class name="Testcase.sharespace.T40_bookmark_uploadfile" />
-			<class name="Testcase.sharespace.T41_bookmark_createfolder" />
-			<class name="Testcase.sharespace.T42_bookmark_download" />
-			<class name="Testcase.sharespace.T43_rename_onbookmark" />
-			<class name="Testcase.sharespace.T44_movefolder_onbookmark" />
-			<class name="Testcase.sharespace.T45_deletefolder_onbookmark" />
-			<class name="Testcase.sharespace.T46_share_onbookmark" />
-			<class name="Testcase.sharespace.T47_create_sdnote" />
-			<class name="Testcase.sharespace.T48_recyclepin_restore" />
-			<class name="Testcase.sharespace.T49_recyclepin_delete" />
-			<class name="Testcase.sharespace.T50_bookmark_file_preview" />
-			<class name="Testcase.sharespace.T51_bookmark_file_details" />
-			<class name="Testcase.sharespace.T52_bookmark_file_download" />
-			<class name="Testcase.sharespace.T53_bookmark_file_share" />
-			<class name="Testcase.sharespace.T54_bookmark_file_sendtomyfile" />
-			<class name="Testcase.sharespace.T55_bookmark_file_sendtodepartment" />
-			<class name="Testcase.sharespace.T56_bookmark_file_sendtoproject" />
-			<class name="Testcase.sharespace.T57_bookmark_file_sendtopartner" />
-			<class name="Testcase.sharespace.T58_bookmark_file_rename" />
-			<class name="Testcase.sharespace.T59_bookmark_file_move" />
-			<class name="Testcase.sharespace.T60_bookmark_file_copy" />
-			<class name="Testcase.sharespace.T61_bookmark_file_delete" />
-			<class name="Testcase.sharespace.T62_bookmark_file_createremainder" />
-			<class name="Testcase.sharespace.T63_bookmark_file_partnerspace" />  
+		<class name="Projectspace.T70_members_user_delete" /> 
+			<class name="Projectspace.T71_members_group_delete" /> 
+	 
 				<class name="Partnerspace.T35_quicksearch" />
 			<class name="Partnerspace.T36_advancesearch" />
 			<class name="Partnerspace.T1_container_open" />

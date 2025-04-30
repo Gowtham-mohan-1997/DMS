@@ -45,7 +45,7 @@ public class T4_upload_filemetadata_using_uploadbutton_toprightcorner extends co
 		Thread.sleep(500);
 		sharespace_pages.fileuploadmetadata.click();
 		Thread.sleep(500);
-		sharespace_pages.fileupload.sendKeys("/home/gautham/Documents/11-801-24-06007.pdf");
+		sharespace_pages.fileupload.sendKeys(properties.getProperty("filename"));
 		Thread.sleep(500);
 		sharespace_pages.metadataapplyclose.click();
 		Thread.sleep(500);
