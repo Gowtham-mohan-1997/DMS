@@ -28,24 +28,24 @@ public class T1_login_DMS extends common_function {
 
 		login_userui();
 		Thread.sleep(5000);
-		login_page.cms.click();
-		Thread.sleep(2000);
-
-
-		String currenttab=driver.getWindowHandle();
-		
-		Set<String> alltab=driver.getWindowHandles();
-		
-		for(String tab:alltab) {
-			if(!tab.equals(currenttab)) {
-				driver.switchTo().window(tab);
-				break;
-			}
-		}
-		
-		login_page.cmslist.click();
-		Thread.sleep(10000);
-
+//		login_page.cms.click();
+//		Thread.sleep(2000);
+//
+//
+//		String currenttab=driver.getWindowHandle();
+//		
+//		Set<String> alltab=driver.getWindowHandles();
+//		
+//		for(String tab:alltab) {
+//			if(!tab.equals(currenttab)) {
+//				driver.switchTo().window(tab);
+//				break;
+//			}
+//		}
+//		
+//		login_page.cmslist.click();
+//		Thread.sleep(10000);
+//
 	}
 
 }

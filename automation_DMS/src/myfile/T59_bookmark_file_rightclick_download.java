@@ -40,7 +40,7 @@ public class T59_bookmark_file_rightclick_download extends common_function {
 
 				MyFiles_page.bookmark.click();
 				Actions action = new Actions(driver);
-				action.contextClick(MyFiles_page.bookmarkfileclick1).perform();
+				action.contextClick(MyFiles_page.bookmarkfolderclick).perform();
 
 				MyFiles_page.bookmarkfiledownload.click();
 				Thread.sleep(1000);

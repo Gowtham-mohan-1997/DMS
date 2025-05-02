@@ -45,7 +45,7 @@ public class T67_bookmark_file_rightclick_move extends common_function{
 		MyFiles_page.bookmark.click();
 		Thread.sleep(1000);
 		Actions action = new Actions(driver);
-		action.contextClick(MyFiles_page.bookmarkfileclick1).perform();
+		action.contextClick(MyFiles_page.bookmarkfolderclick).perform();
 
 		utility.clickWithWait(MyFiles_page.bookmarkfilemoveandcopy);
 

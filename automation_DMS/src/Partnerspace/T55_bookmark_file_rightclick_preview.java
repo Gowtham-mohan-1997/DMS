@@ -52,7 +52,7 @@ public class T55_bookmark_file_rightclick_preview extends common_function{
 		utility.clickWithWait(Partnerspace_pages.bookmark);
 		Thread.sleep(2000);
 		Actions action = new Actions(driver);
-		action.contextClick(Partnerspace_pages.bookmarkfileclick1).perform();
+		action.contextClick(Partnerspace_pages.filepdf).perform();
 		Thread.sleep(2000);
 		//utility.clickWithWait(Partnerspace_pages.bookmarkfilepreview);
 		Partnerspace_pages.bookmarkfilepreview.click();

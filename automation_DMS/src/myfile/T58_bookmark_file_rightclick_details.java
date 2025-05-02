@@ -44,7 +44,7 @@ public class T58_bookmark_file_rightclick_details extends common_function{
 		MyFiles_page.bookmark.click();
 
 		Actions action = new Actions(driver);
-		action.contextClick(MyFiles_page.bookmarkfileclick1).perform();
+		action.contextClick(MyFiles_page.bookmarkfolderclick).perform();
 
 		MyFiles_page.bookmarkfiledetails.click();
 

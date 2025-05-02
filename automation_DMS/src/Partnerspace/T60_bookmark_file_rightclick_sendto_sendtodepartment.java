@@ -51,7 +51,7 @@ public class T60_bookmark_file_rightclick_sendto_sendtodepartment extends common
 		Partnerspace_pages.bookmark.click();
 		Thread.sleep(1000);
 		Actions action = new Actions(driver);
-		action.contextClick(Partnerspace_pages.bookmarkfileclick1).perform();
+		action.contextClick(Partnerspace_pages.filepdf).perform();
 
 
 		utility.clickWithWait(Partnerspace_pages.bookmarkfilesendto);

@@ -4,7 +4,7 @@
 	<test name="Test1">
 				<classes>
 
-			<!-- <class name="myfile.T1_login_DMS"/>
+			<class name="myfile.T1_login_DMS"/>
 			<class name="myfile.T2_container_open" />
 			<class name="myfile.T3_create_folder_using_createbutton_toprightcorner" />
 			<class name="myfile.T4_Upload_file_using_uploadbutton_toprightcorner" />
@@ -73,7 +73,7 @@
 			<class name="myfile.T67_bookmark_file_rightclick_move" />
 			<class name="myfile.T68_bookmark_file_rightclick_delete" />
 			<class name="myfile.T69_bookmark_file_rightclick_createremainder" />
-			<class name="Department.T1_container_open" />
+		<!-- 	<class name="Department.T1_container_open" />
 			<class name="Department.T2_create_folder_using_createbutton_toprightcorner" />
 			<class name="Department.T3_upload_file_using_uploadbutton_toprightcorner" />
 			<class name="Department.T4_upload_filemetadata_using_uploadbutton_toprightcorner" />
@@ -138,7 +138,7 @@
 			<class name="Department.T63_bookmark_file_rightclick_copy" />
 			<class name="Department.T64_bookmark_file_rightclick_delete" />
 			<class name="Department.T65_bookmark_file_rightclick_createremainder" />
-			<class name="Department.T66_member_delete" /> -->
+			<class name="Department.T66_member_delete" /> 
 			<class name="sharespace.T1_container_open" />
 			<class name="sharespace.T2_create_folder_using_createbutton_toprightcorner" />
 			<class name="sharespace.T3_uploadfile_using_uploadbutton_toprightcorner" />
@@ -198,7 +198,7 @@
 			<class name="sharespace.T61_bookmark_file_rightclick_delete" />
 			<class name="sharespace.T62_bookmark_file_rightclick_createremainder" />
 			<class name="sharespace.T63_bookmark_file_partnerspace" />  
-	<!--	
+		
 	<class name="sharespace.T33_quicksearch" />
 			<class name="sharespace.T34_advancesearch" />
 		<class name="Projectspace.T1_container_open" />
@@ -268,8 +268,7 @@
 		<class name="Projectspace.T70_members_user_delete" /> 
 			<class name="Projectspace.T71_members_group_delete" /> 
 	 
-				<class name="Partnerspace.T35_quicksearch" />
-			<class name="Partnerspace.T36_advancesearch" />
+			
 			<class name="Partnerspace.T1_container_open" />
 			<class name="Partnerspace.T2_create_project" />
 			<class name="Partnerspace.T3_projectname_search" />
@@ -319,9 +318,6 @@
 			<class name="Partnerspace.T49_create_sdnote" />
 			<class name="Partnerspace.T50_recyclepin_folder_rightclick_restore" />
 			<class name="Partnerspace.T51_recyclepin_folder_rightclick_delete" />
-			<class name="Partnerspace.T52_member_Adduser" />
-			<class name="Partnerspace.T53_member_Addgroup" />
-			<class name="Partnerspace.T54_member_addpartner" />
 			<class name="Partnerspace.T55_bookmark_file_rightclick_preview" />
 			<class name="Partnerspace.T56_bookmark_file_rightclick_details" />
 			<class name="Partnerspace.T57_bookmark_file_rightclick_download" />
@@ -329,19 +325,20 @@
 		<class name="Partnerspace.T70_bookmark_file_rightclick_createremainder" />
 		<class name="Partnerspace.T68_bookmark_file_rightclick_lock" />
 			<class name="Partnerspace.T59_bookmark_file_rightclick_sendto_sendtomyfile" />
-			<class name="Partnerspace.T60_bookmark_file_rightclick_sendto_sendtodepartment" />
 			<class name="Partnerspace.T61_bookmark_file_rightclick_sendto_sendtoproject" />
 			<class name="Partnerspace.T62_bookmark_file_rightclick_sendto_sendtopartnerspace" />
 			<class name="Partnerspace.T63_bookmark_file_rightclick_sendto_sendtosharespace" />
-				<class name="Partnerspace.T62_bookmark_file_rightclick_sendto_sendtopartnerspace" /> 
-					<class name="Partnerspace.T69_bookmark_file_rightclick_delete" />
-			<class name="Partnerspace.T64_bookmark_file_rightclick_rename" />
-			<class name="Partnerspace.T65_bookmark_file_rightclick_move" />
 			<class name="Partnerspace.T66_bookmark_file_rightclick_copy" />
-			<class name="Partnerspace.T67_bookmark_file_rightclick_checkout" />
-			<class name="Partnerspace.T69_bookmark_file_rightclick_delete" />
-			<class name="Partnerspace.T71_members_user_delete" />
-			<class name="Partnerspace.T72_members_group_delete" />-->
+			<class name="Partnerspace.T67_bookmark_file_rightclick_checkout" /> -->
+			
+		<!--
+			<class name="Partnerspace.T35_quicksearch" />
+			<class name="Partnerspace.T36_advancesearch" />
+		<class name="Partnerspace.T52_member_Adduser" />
+			<class name="Partnerspace.T53_member_Addgroup" />
+			<class name="Partnerspace.T54_member_addpartner" />	
+		<class name="Partnerspace.T71_members_user_delete" />
+			<class name="Partnerspace.T72_members_group_delete" /> -->
 		</classes>
 	</test>
 </suite> <!-- Suite -->

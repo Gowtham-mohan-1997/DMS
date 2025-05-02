@@ -49,7 +49,7 @@ public class T25_file_rightclick_copy extends common_function{
 		action1.perform();
 		Thread.sleep(2000);
 		Actions action = new Actions(driver);
-        action.contextClick(MyFiles_page.filepdf).perform();
+        action.contextClick(MyFiles_page.filepdf3).perform();
         Thread.sleep(2000);
         MyFiles_page.movef.click();
 		Thread.sleep(500);

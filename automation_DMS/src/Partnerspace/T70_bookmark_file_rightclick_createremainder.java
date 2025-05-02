@@ -51,7 +51,7 @@ public class T70_bookmark_file_rightclick_createremainder extends common_functio
 		Partnerspace_pages.bookmark.click();
 		Thread.sleep(2000);
 		Actions action = new Actions(driver);
-		action.contextClick(Partnerspace_pages.bookmarkfileclick1).perform();
+		action.contextClick(Partnerspace_pages.filepdf).perform();
 
 		utility.clickWithWait(Partnerspace_pages.bookmarkfileremainter);
 

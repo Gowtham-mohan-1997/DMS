@@ -50,7 +50,7 @@ public class T60_bookmark_file_rightclick_share extends common_function{
 
 		MyFiles_page.bookmark.click();
 		Actions action = new Actions(driver);
-		action.contextClick(MyFiles_page.bookmarkfileclick1).perform();
+		action.contextClick(MyFiles_page.bookmarkfolderclick).perform();
 
 		MyFiles_page.bookmarkfileshare.click();
 		Thread.sleep(1000);

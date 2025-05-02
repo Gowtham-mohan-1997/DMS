@@ -76,7 +76,7 @@ public class T31_file_rightclick_delete extends common_function{
 		Partnerspace_pages.folderclick.click();
 		Thread.sleep(1000);
 		Actions action = new Actions(driver);
-        action.contextClick(Partnerspace_pages.filepdf).perform();
+        action.contextClick(Partnerspace_pages.filepdf1).perform();
         Thread.sleep(500);
         Partnerspace_pages.deleteonfile.click();
         Thread.sleep(500);

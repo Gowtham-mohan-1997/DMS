@@ -45,7 +45,7 @@ public class T47_bookmark_file_rightclick_uploadfile extends common_function{
 		Thread.sleep(1000);
 		MyFiles_page.uploadfileonbookmark.click();
 		Thread.sleep(500);
-		MyFiles_page.fileupload.sendKeys("/home/gautham/Documents/gowtham2.pdf");
+		MyFiles_page.fileupload.sendKeys(properties.getProperty("filename"));
 		Thread.sleep(3000);
 		String actualdata =MyFiles_page.actualelement.getText();
 		String expecteddata ="success1/1 File(s) uploaded successfully";

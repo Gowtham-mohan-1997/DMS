@@ -187,7 +187,7 @@ public class Partnerspace_pages {
 //	@FindBy(xpath="//*[@id=\"move_sub_tree_tv_active\"]/ul/li[1]/div/span")
 //	public static WebElement folderclick;
 
-	@FindBy(xpath="//div[@title=\"11-801-24-06007.pdf\"]")
+	@FindBy(xpath="(//div[@title=\"11-801-24-06007.pdf\"])[2]")
 	public static WebElement filepdf;
 
 	@FindBy(xpath="//div[@title=\"11-801-24-06007.pdf\"]")
@@ -512,7 +512,7 @@ public class Partnerspace_pages {
 	@FindBy(xpath="//*[@id=\"grid_mybookmark_list\"]/div[2]/table/tbody/tr[4]/td[2]")
 	public static WebElement bookmarkfileclick1;
 
-	@FindBy(xpath="(//span[text()=\"Preview\"])[2]")
+	@FindBy(xpath="//span[text()=\"Preview\"]")
 	public static WebElement bookmarkfilepreview;
 
 
@@ -530,7 +530,7 @@ public class Partnerspace_pages {
 	public static WebElement bookmarkfileshare;
 
 
-	@FindBy(xpath="(//span[@class=\"k-link k-menu-link\" and text()='Send To MyFiles'])[2]")
+	@FindBy(xpath="//span[@class=\"k-link k-menu-link\" and text()=\"Send To MyFiles\"]")
 	public static WebElement bookmarkfilesendtomyfile;
 
 	@FindBy(id="sh_share_popup_copylink_btn")

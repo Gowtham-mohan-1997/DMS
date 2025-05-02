@@ -52,7 +52,7 @@ public class T32_file_rightclick_fileactivitylog_verifiedcheckbox_isenable exten
 		Partnerspace_pages.folderclick.click();
 		Thread.sleep(500);
 		Actions action = new Actions(driver);
-		action.contextClick(Partnerspace_pages.filepdf).perform();
+		action.contextClick(Partnerspace_pages.filepdf1).perform();
 		Thread.sleep(500);
 		Partnerspace_pages.fileactivitylog.click();
 		Thread.sleep(2000);

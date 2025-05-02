@@ -72,6 +72,9 @@ public class MyFiles_page {
 	@FindBy(id="createfolder_save_btn")
 	public static WebElement save;    //save button in create folder
 
+	@FindBy(xpath="//div[@title=\"11-801-24-06007.pdf\"]")
+	public static WebElement filepdf3;
+	
 	@FindBy(id="sd-note-save-btn")
 	public static WebElement sdnotesave;  // save buttopn for sdnote
 
@@ -251,22 +254,22 @@ public class MyFiles_page {
 	@FindBy(id="share_send_btn")
 	public static WebElement sendbutton;  //send button in sendto inside the department in folder
 
-	@FindBy(xpath="//*[@id=\"context-menu-details-grid\"]/li[7]/div/ul/li[2]/span")
+	@FindBy(xpath="//*[@id=\"context-menu-details-grid\"]/li[7]/div/ul/li[1]/span")
 	public static WebElement project;//project in sendto on file
 
 	@FindBy(xpath="//*[@id=\"share_sub_tree_tv_active\"]/div/span")
 	public static WebElement projectfolder; //select the folder inside the project in sendto onfile
 
-	@FindBy(xpath="//*[@id=\"context-menu-details-grid\"]/li[7]/div/ul/li[3]/span")
+	@FindBy(xpath="//*[@id=\"context-menu-details-grid\"]/li[7]/div/ul/li[2]/span")
 	public static WebElement partnerproject;
 
 	@FindBy(xpath="//*[@id=\"share_sub_tree_tv_active\"]/div/span")
 	public static WebElement partnerprojectfolder;
 
-	@FindBy(xpath="//span[text()=\"Send To ShareSpace\"]")
+	@FindBy(xpath="//*[@id=\"context-menu-details-grid\"]/li[7]/div/ul/li[3]/span")
 	public static WebElement sharespace;
 
-	@FindBy(xpath="//*[@id=\"share_sub_tree\"]/li[2]/div/span")
+	@FindBy(xpath="//*[@id=\"share_sub_tree\"]/li/ul/li[1]/div/span")
 	public static WebElement sharespacefolder;
 
 	@FindBy(xpath="//*[@id=\"move_sub_tree_tv_active\"]/ul/li[1]/div/span")
@@ -354,7 +357,7 @@ public class MyFiles_page {
 	@FindBy(id="sm_bookmarks_icon")
 	public static WebElement bookmark;
 
-	@FindBy(css="div#grid_mybookmark_list div[class=\"title file_size_title ellipses\"]")
+	@FindBy(xpath="//*[@id=\"grid_mybookmark_list\"]/div[2]/table/tbody/tr[7]/td[2]")
 	public static WebElement bookmarkfolderclick;
 
 	@FindBy(xpath="//*[@id=\"uploads_bookmarks_c_menu\"]/li[2]/span")
@@ -414,7 +417,7 @@ public class MyFiles_page {
 	@FindBy(xpath="//*[@id=\"share_sub_tree_tv_active\"]/ul/li[1]/div/span")
 	public static WebElement bookmarkfiledepartmentfolderclick;
 
-	@FindBy(xpath="//*[@id=\"share_sub_tree\"]/li[2]/div/span")
+	@FindBy(xpath="//*[@id=\"share_sub_tree\"]/li/ul/li[1]/div/span")
 	public static WebElement bookmarkfilesharespacefolderclick;
 
 	@FindBy(id="share_send_btn")

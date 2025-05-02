@@ -77,7 +77,7 @@ public class T27_file_rightclick_move extends common_function{
 		Thread.sleep(500);
 		Thread.sleep(500);
 		Actions action = new Actions(driver);
-        action.contextClick(Partnerspace_pages.filepdf).perform();
+        action.contextClick(Partnerspace_pages.filepdf1).perform();
         Thread.sleep(500);
         Partnerspace_pages.moveandcopyonfile.click();
         Thread.sleep(500);

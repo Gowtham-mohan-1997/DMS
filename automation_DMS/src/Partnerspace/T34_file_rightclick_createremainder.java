@@ -52,7 +52,7 @@ public class T34_file_rightclick_createremainder extends common_function{
 		Partnerspace_pages.folderclick.click();
 		Thread.sleep(500);
 		Actions action = new Actions(driver);
-		action.contextClick(Partnerspace_pages.filepdf).perform();
+		action.contextClick(Partnerspace_pages.filepdf1).perform();
 		Thread.sleep(500);
 		Partnerspace_pages.createremainteronfile.click();
 		Thread.sleep(500);

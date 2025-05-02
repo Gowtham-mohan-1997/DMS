@@ -53,7 +53,7 @@ public class T24_file_rightclick_sendto_sendtopartnerspace extends common_functi
 		Partnerspace_pages.folderclick.click();
 		Thread.sleep(500);
 		Actions action = new Actions(driver);
-        action.contextClick(Partnerspace_pages.filepdf).perform();
+        action.contextClick(Partnerspace_pages.filepdf1).perform();
         Thread.sleep(500);
         Partnerspace_pages.sendtodropdownonfile.click();
         Thread.sleep(500);

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="sharespace.T63_bookmark_file_partnerspace">
+      <class name="myfile.T9_folder_rightclick_rename">
         <methods>
           <include name="launchbrowser"/>
-          <include name="s1_bookmark_file_partnerspace"/>
+          <include name="s1_rename_usingdropdown_onfolder_myfile"/>
           <include name="teardown"/>
         </methods>
-      </class> <!-- sharespace.T63_bookmark_file_partnerspace -->
+      </class> <!-- myfile.T9_folder_rightclick_rename -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

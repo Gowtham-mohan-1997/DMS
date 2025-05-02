@@ -45,7 +45,7 @@ public class T32_file_rightclick_sendto_sendtoproject extends common_function{
 		MyFiles_page.folder.click();
 		Thread.sleep(500);
 		Actions action = new Actions(driver);
-	    action.contextClick(MyFiles_page.filepdf).perform();
+	    action.contextClick(MyFiles_page.filepdf3).perform();
 	    Thread.sleep(500);
 	    MyFiles_page.sendtobutton.click();
 	    Thread.sleep(500);

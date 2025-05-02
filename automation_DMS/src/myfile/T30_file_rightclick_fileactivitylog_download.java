@@ -45,7 +45,7 @@ public class T30_file_rightclick_fileactivitylog_download extends common_functio
 		MyFiles_page.folder.click();
 		Thread.sleep(500);
 		Actions action = new Actions(driver);
-        action.contextClick(MyFiles_page.filepdf).perform();
+        action.contextClick(MyFiles_page.filepdf3).perform();
         Thread.sleep(500);
         MyFiles_page.folderactivitylog.click();
         Thread.sleep(500);

@@ -61,7 +61,7 @@ public class T20_file_rightclick_share extends common_function{
 		Partnerspace_pages.folderclick.click();
 		Thread.sleep(500);
 		Actions action = new Actions(driver);
-        action.contextClick(Partnerspace_pages.filepdf).perform();
+        action.contextClick(Partnerspace_pages.filepdf1).perform();
         Thread.sleep(500);
         Partnerspace_pages.shareinfile.click();
         Thread.sleep(500);

@@ -58,7 +58,7 @@ public class T26_file_rightclick_delete extends common_function{
 		Thread.sleep(500);
 		MyFiles_page.files.click();
 		Thread.sleep(500);
-		MyFiles_page.fileupload.sendKeys("/home/gautham/Documents/gowtham2.pdf");
+		MyFiles_page.fileupload.sendKeys(properties.getProperty("filename"));
 		Thread.sleep(1000);
 		MyFiles_page.filesinmyfile.click();
 		Thread.sleep(1000);
@@ -71,7 +71,7 @@ public class T26_file_rightclick_delete extends common_function{
 		action2.perform();
 		Thread.sleep(500);
 		Actions action = new Actions(driver);
-        action.contextClick(MyFiles_page.filepdf2).perform();
+        action.contextClick(MyFiles_page.filepdf3).perform();
         Thread.sleep(500);
         MyFiles_page.deletefolder.click();
         Thread.sleep(500);

@@ -45,7 +45,7 @@ public class T57_bookmark_file_rightclick_preview extends common_function{
 		utility.clickWithWait(MyFiles_page.bookmark);
 		Thread.sleep(2000);
 		Actions action = new Actions(driver);
-		action.contextClick(MyFiles_page.bookmarkfileclick1).perform();
+		action.contextClick(MyFiles_page.bookmarkfolderclick).perform();
 
 		utility.clickWithWait(MyFiles_page.bookmarkfilepreview);
 

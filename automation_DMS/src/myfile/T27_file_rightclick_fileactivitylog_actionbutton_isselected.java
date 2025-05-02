@@ -45,7 +45,7 @@ public class T27_file_rightclick_fileactivitylog_actionbutton_isselected extends
 		MyFiles_page.folder.click();
 		Thread.sleep(500);
 		Actions action = new Actions(driver);
-        action.contextClick(MyFiles_page.filepdf).perform();
+        action.contextClick(MyFiles_page.filepdf3).perform();
         Thread.sleep(2000);
         MyFiles_page.folderactivitylog.click();
         Thread.sleep(2000);

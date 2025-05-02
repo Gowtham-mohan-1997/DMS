@@ -47,7 +47,7 @@ public class T63_bookmark_file_rightclick_sendto_sendtopartner extends common_fu
 		MyFiles_page.bookmark.click();
 		Thread.sleep(1000);
 		Actions action = new Actions(driver);
-		action.contextClick(MyFiles_page.bookmarkfileclick1).perform();
+		action.contextClick(MyFiles_page.bookmarkfolderclick).perform();
 
 		utility.clickWithWait(MyFiles_page.bookmarkfilesendto);
 

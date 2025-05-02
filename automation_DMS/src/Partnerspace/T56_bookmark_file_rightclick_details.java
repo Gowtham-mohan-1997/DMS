@@ -51,7 +51,7 @@ public class T56_bookmark_file_rightclick_details extends common_function{
 		utility.clickWithWait(Partnerspace_pages.bookmark);
 
 		Actions action = new Actions(driver);
-		action.contextClick(Partnerspace_pages.bookmarkfileclick1).perform();
+		action.contextClick(Partnerspace_pages.filepdf).perform();
 
 		Partnerspace_pages.bookmarkfiledetails.click();
 		Thread.sleep(1000);

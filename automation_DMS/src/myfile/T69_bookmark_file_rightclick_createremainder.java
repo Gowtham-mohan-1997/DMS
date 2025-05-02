@@ -45,7 +45,7 @@ public class T69_bookmark_file_rightclick_createremainder extends common_functio
 		MyFiles_page.bookmark.click();
 		Thread.sleep(2000);
 		Actions action = new Actions(driver);
-		action.contextClick(MyFiles_page.bookmarkfileclick1).perform();
+		action.contextClick(MyFiles_page.bookmarkfolderclick).perform();
 
 		utility.clickWithWait(MyFiles_page.bookmarkfileremainter);
 

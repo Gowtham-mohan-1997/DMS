@@ -49,7 +49,7 @@ public class T6_folder_rightclick_uploadfile extends common_function {
 		Thread.sleep(500);
 		MyFiles_page.uploadfileonfolder.click();
 		Thread.sleep(500);
-		MyFiles_page.fileupload.sendKeys("//home//gautham//chrome//chromedriver_linux64.zip");
+		MyFiles_page.fileupload.sendKeys(properties.getProperty("filename"));
 		Thread.sleep(2000);
 		String actualdata =MyFiles_page.actualelement.getText();
 		//String expecteddata ="1/1 File(s) uploaded successfully";
